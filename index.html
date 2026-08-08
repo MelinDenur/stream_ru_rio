@@ -390,14 +390,58 @@
     <br><br>
     Страница всегда запрашивает данные <strong>текущего сезона</strong> (без указания season в API) — поэтому при выходе
     второго и последующих сезонов Midnight ничего менять не нужно, таблица сама покажет актуальные ключи и Score.
-    Если у API произойдёт ошибка CORS в твоём браузере — открой файл через локальный сервер
-    (например, <code>npx serve</code>) вместо прямого открытия файла с диска.
+    <br><br>
+    <h3 style="margin-top:16px;">Про CORS-прокси</h3>
+    У Raider.IO API нет CORS-заголовков для сторонних доменов, поэтому запросы идут через публичный прокси
+    <code>allorigins.win</code>. Он бесплатный, но иногда бывает медленным или временно недоступным — если видишь
+    ошибку «прокси недоступен», просто нажми «Обновить все данные» ещё раз через несколько секунд.
+    <br><br>
+    Для надёжной работы (например, если планируешь показывать страницу зрителям постоянно) лучше поднять свой
+    прокси на Cloudflare Workers — это бесплатно и занимает пять минут:
+    <ol style="padding-left:18px; margin:8px 0;">
+      <li>Зайди на <code>workers.cloudflare.com</code>, создай аккаунт и нажми «Create Worker».</li>
+      <li>Вставь этот код вместо шаблонного:
+        <br>
+        <code style="display:block; white-space:pre; padding:10px; margin-top:6px;">export default {
+  async fetch(request) {
+    const url = new URL(request.url);
+    const target = url.searchParams.get("url");
+    const resp = await fetch(target);
+    const body = await resp.text();
+    return new Response(body, {
+      status: resp.status,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+      }
+    });
+  }
+}</code>
+      </li>
+      <li>Нажми Deploy — получишь адрес вида <code>https://имя.твой-ник.workers.dev</code>.</li>
+      <li>В коде страницы замени <code>CORS_PROXY_PREFIX</code> на <code>https://имя.твой-ник.workers.dev/?url=</code>.</li>
+    </ol>
   </footer>
 
 </div>
 
 <script>
 const API_BASE = "https://raider.io/api/v2/characters/profile";
+
+// Raider.IO не отдаёт CORS-заголовки для запросов из браузера с произвольных
+// доменов — прямой fetch() всегда будет падать с "Failed to fetch", независимо
+// от того, где хостится эта страница (file://, GitHub Pages и т.д.).
+// Поэтому запрос идёт через прокси, который просто пробрасывает ответ и
+// добавляет Access-Control-Allow-Origin: *.
+//
+// Быстрый вариант (по умолчанию) — публичный прокси allorigins.win.
+// Он бесплатный, но не даёт гарантий аптайма и может ловить рейт-лимиты
+// при частых обновлениях. Для постоянного использования разверни свой
+// прокси на Cloudflare Workers (см. инструкцию в футере страницы) и пропиши
+// его адрес в CORS_PROXY_PREFIX ниже.
+const CORS_PROXY_PREFIX = "https://api.allorigins.win/raw?url=";
+// Если развернул свой Cloudflare Worker — замени на:
+// const CORS_PROXY_PREFIX = "https://ТВОЙ-WORKER.workers.dev/?url=";
 
 const CLASS_RU = {
   "Warrior":"Воин","Paladin":"Паладин","Hunter":"Охотник","Rogue":"Разбойник",
@@ -520,7 +564,8 @@ async function fetchStreamer(s){
       name: s.char,
       fields: "mythic_plus_scores_by_season:current,mythic_plus_best_runs"
     });
-    const res = await fetch(API_BASE + "?" + params.toString());
+    const targetUrl = API_BASE + "?" + params.toString();
+    const res = await fetch(CORS_PROXY_PREFIX + encodeURIComponent(targetUrl));
     if(!res.ok){
       let bodyMsg = "";
       try{ const j = await res.json(); bodyMsg = j.message || ""; }catch(_){}
@@ -535,7 +580,7 @@ async function fetchStreamer(s){
     // страницы напрямую как file://) или отсутствие интернет-соединения —
     // это не значит, что персонаж не найден.
     s.error = e.message === "Failed to fetch"
-      ? "сеть/CORS — открой страницу через http(s), не file://"
+      ? "прокси недоступен — попробуй обновить ещё раз через пару секунд"
       : e.message;
     console.error("Raider.IO fetch failed for", s.char, s.realm, e);
   }
