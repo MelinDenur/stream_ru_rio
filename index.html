@@ -179,12 +179,6 @@
     vertical-align: middle;
   }
 
-  .streamer-cell{
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-
   .streamer-cell a{
     color: var(--text);
     text-decoration:none;
@@ -232,11 +226,6 @@
     font-size: 14px;
     color:#0e0e14;
   }
-  .key-badge small{
-    font-weight:600;
-    font-size: 11px;
-    opacity:0.75;
-  }
   .tier-low{ background: var(--tier-low); }
   .tier-mid{ background: var(--tier-mid); }
   .tier-high{ background: var(--tier-high); color:#f6eeff; }
@@ -250,10 +239,7 @@
     margin-top: 4px;
   }
 
-  .score{
-    font-weight:700;
-    color: var(--gold);
-  }
+  .score{ font-weight:700; color: var(--gold); }
 
   .rio-link{
     font-size: 12px;
@@ -266,23 +252,6 @@
   }
   .rio-link:hover{ border-color: var(--gold-dim); color: var(--gold); }
 
-  .remove-btn{
-    background:none;
-    border:none;
-    color: var(--text-muted);
-    font-size: 16px;
-    cursor:pointer;
-    padding: 4px 8px;
-  }
-  .remove-btn:hover{ color: var(--tier-extreme); }
-
-  .empty-state{
-    text-align:center;
-    padding: 46px 20px;
-    color: var(--text-muted);
-  }
-  .empty-state strong{ color: var(--text); display:block; margin-bottom:6px; font-size:15px;}
-
   .state-tag{
     font-size: 11px;
     padding: 2px 8px;
@@ -293,12 +262,30 @@
   .state-error{
     color: var(--tier-extreme);
     background: rgba(224,82,82,0.1);
-    white-space: normal;
-    display: inline-block;
-    max-width: 160px;
-    line-height: 1.4;
+    display:inline-block;
+    max-width:160px;
+    line-height:1.4;
   }
-  .state-loading{ color: var(--gold); background: rgba(212,175,106,0.1); }
+
+  .empty-state{
+    text-align:center;
+    padding: 46px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state strong{ color: var(--text); display:block; margin-bottom:6px; font-size:15px;}
+
+  textarea{
+    width:100%;
+    min-height: 160px;
+    background: var(--bg-panel-2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 12px;
+    line-height:1.5;
+  }
 
   footer{
     margin-top: 30px;
@@ -306,21 +293,16 @@
     color: var(--text-muted);
     line-height:1.7;
   }
-  footer h3{
-    color: var(--text);
-    font-size: 13px;
-    margin: 0 0 8px;
-  }
+  footer h3{ color: var(--text); font-size: 13px; margin: 16px 0 8px; }
   footer code{
     background: var(--bg-panel-2);
     padding: 1px 6px;
     border-radius: 4px;
     border: 1px solid var(--border);
   }
+  footer ol{ padding-left:18px; margin:8px 0; }
 
-  @media (prefers-reduced-motion: reduce){
-    button{ transition:none; }
-  }
+  @media (prefers-reduced-motion: reduce){ button{ transition:none; } }
 </style>
 </head>
 <body>
@@ -329,13 +311,45 @@
   <header>
     <div>
       <h1>M+ рейтинг стримеров</h1>
-      <p>Русскоязычные стримеры категории World of Warcraft — класс, роль и максимально закрытый ключ. Данные подтягиваются напрямую из Raider.IO.</p>
+      <p>Русскоязычные стримеры категории World of Warcraft — класс, роль и максимально закрытый ключ. Данные обновляются автоматически через GitHub Actions.</p>
     </div>
-    <div class="season-tag" id="seasonTag">Midnight · Сезон 1</div>
+    <div class="season-tag">Midnight · Сезон 1</div>
   </header>
 
   <div class="panel">
-    <h2>Добавить стримера</h2>
+    <div class="toolbar">
+      <h2 style="margin:0;">Список</h2>
+      <span class="status" id="statusText">загрузка…</span>
+    </div>
+
+    <table id="tbl" style="display:none;">
+      <thead>
+        <tr>
+          <th>Стример</th>
+          <th>Класс</th>
+          <th>Роль</th>
+          <th>Максимальный ключ</th>
+          <th>M+ Score</th>
+          <th>Профиль</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <div class="empty-state" id="emptyState">
+      <strong>Данных пока нет</strong>
+      Добавь стримеров в streamers.json (см. форму ниже) и запусти workflow в Actions.
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Добавить стримера в streamers.json</h2>
+    <p style="color:var(--text-muted); font-size:13px; margin-top:-4px;">
+      Страница на GitHub Pages статична и не может сама писать в репозиторий — заполни форму,
+      скопируй получившийся JSON и вставь его в файл <code>streamers.json</code> в репозитории
+      (или скачай файл и загрузи вместо старого). После коммита workflow подхватит изменения
+      автоматически (см. триггер <code>push: paths: streamers.json</code>) или запусти его вручную во вкладке Actions.
+    </p>
     <div class="add-form">
       <input type="text" id="inTwitch" placeholder="Twitch-ник (напр. streamername)">
       <select id="inRegion">
@@ -346,121 +360,54 @@
       </select>
       <input type="text" id="inRealm" placeholder="Реалм (напр. howling-fjord)">
       <input type="text" id="inChar" placeholder="Имя персонажа">
-      <button class="btn-gold" id="btnAdd">Добавить</button>
+      <button class="btn-gold" id="btnAdd">Добавить в черновик</button>
     </div>
-  </div>
-
-  <div class="panel">
-    <div class="toolbar">
-      <h2 style="margin:0;">Список</h2>
-      <div style="display:flex; align-items:center; gap:12px;">
-        <span class="status" id="statusText"></span>
-        <button class="btn-ghost" id="btnRefresh">Обновить все данные</button>
+    <div style="margin-top:14px;">
+      <textarea id="jsonOut" readonly placeholder="Здесь появится содержимое streamers.json..."></textarea>
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <button class="btn-ghost" id="btnCopy">Скопировать</button>
+        <button class="btn-ghost" id="btnDownload">Скачать streamers.json</button>
       </div>
-    </div>
-
-    <table id="tbl">
-      <thead>
-        <tr>
-          <th>Стример</th>
-          <th>Класс</th>
-          <th>Роль</th>
-          <th>Максимальный ключ</th>
-          <th>M+ Score</th>
-          <th>Профиль</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
-
-    <div class="empty-state" id="emptyState">
-      <strong>Список пуст</strong>
-      Добавьте первого стримера через форму выше — Twitch-ник, регион, реалм и имя персонажа.
     </div>
   </div>
 
   <footer>
-    <h3>Как найти реалм и имя персонажа стримера</h3>
-    Если в описании канала стоит расширение Raider.IO (WoW M+) или указан battletag — открой ссылку из панели ниже плеера,
-    она обычно выглядит как <code>raider.io/characters/eu/realm/CharacterName</code>: возьми регион, реалм и имя оттуда.
-    Если такой ссылки нет — многие стримеры держат чат-команду вроде <code>!rio</code> или <code>!армори</code>,
-    либо публикуют battletag в панелях «О канале» / Discord. Реалм нужно вводить в формате из URL Raider.IO — например
-    «Howling Fjord» → <code>howling-fjord</code>.
+    <h3>Как это устроено</h3>
+    Запросы к Raider.IO выполняются не из браузера, а на сервере GitHub Actions по расписанию
+    (workflow <code>.github/workflows/update-data.yml</code>) — поэтому проблема CORS не возникает
+    вообще, никакие прокси не нужны. Скрипт <code>scripts/fetch_data.py</code> читает
+    <code>streamers.json</code>, запрашивает Raider.IO и пишет результат в <code>data.json</code>,
+    который эта страница просто подгружает как обычный статический файл со своего же домена.
     <br><br>
-    Страница всегда запрашивает данные <strong>текущего сезона</strong> (без указания season в API) — поэтому при выходе
-    второго и последующих сезонов Midnight ничего менять не нужно, таблица сама покажет актуальные ключи и Score.
-    <br><br>
-    <h3 style="margin-top:16px;">Про CORS-прокси</h3>
-    У Raider.IO API нет CORS-заголовков для сторонних доменов, поэтому запросы идут через публичный прокси
-    <code>allorigins.win</code>. Он бесплатный, но иногда бывает медленным или временно недоступным — если видишь
-    ошибку «прокси недоступен», просто нажми «Обновить все данные» ещё раз через несколько секунд.
-    <br><br>
-    Для надёжной работы (например, если планируешь показывать страницу зрителям постоянно) лучше поднять свой
-    прокси на Cloudflare Workers — это бесплатно и занимает пять минут:
-    <ol style="padding-left:18px; margin:8px 0;">
-      <li>Зайди на <code>workers.cloudflare.com</code>, создай аккаунт и нажми «Create Worker».</li>
-      <li>Вставь этот код вместо шаблонного:
-        <br>
-        <code style="display:block; white-space:pre; padding:10px; margin-top:6px;">export default {
-  async fetch(request) {
-    const url = new URL(request.url);
-    const target = url.searchParams.get("url");
-    const resp = await fetch(target);
-    const body = await resp.text();
-    return new Response(body, {
-      status: resp.status,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
-      }
-    });
-  }
-}</code>
-      </li>
-      <li>Нажми Deploy — получишь адрес вида <code>https://имя.твой-ник.workers.dev</code>.</li>
-      <li>В коде страницы замени <code>CORS_PROXY_PREFIX</code> на <code>https://имя.твой-ник.workers.dev/?url=</code>.</li>
+    Season в запросе не указывается — Raider.IO по умолчанию отдаёт данные <strong>текущего сезона</strong>,
+    так что при выходе Midnight Season 2 и далее менять ничего не нужно.
+
+    <h3>Первый запуск</h3>
+    <ol>
+      <li>Убедись, что в настройках репозитория (Settings → Actions → General → Workflow permissions) включено «Read and write permissions» — иначе workflow не сможет закоммитить data.json.</li>
+      <li>Отредактируй <code>streamers.json</code> (через форму выше или вручную) и запушь.</li>
+      <li>Зайди во вкладку Actions → «Обновить данные M+» → Run workflow, чтобы не ждать первый автозапуск по расписанию.</li>
+      <li>Через минуту-две обнови страницу — данные подтянутся из свежего data.json.</li>
     </ol>
   </footer>
 
 </div>
 
 <script>
-const API_BASE = "https://raider.io/api/v2/characters/profile";
-
-// Raider.IO не отдаёт CORS-заголовки для запросов из браузера с произвольных
-// доменов — прямой fetch() всегда будет падать с "Failed to fetch", независимо
-// от того, где хостится эта страница (file://, GitHub Pages и т.д.).
-// Поэтому запрос идёт через прокси, который просто пробрасывает ответ и
-// добавляет Access-Control-Allow-Origin: *.
-//
-// Быстрый вариант (по умолчанию) — публичный прокси allorigins.win.
-// Он бесплатный, но не даёт гарантий аптайма и может ловить рейт-лимиты
-// при частых обновлениях. Для постоянного использования разверни свой
-// прокси на Cloudflare Workers (см. инструкцию в футере страницы) и пропиши
-// его адрес в CORS_PROXY_PREFIX ниже.
-const CORS_PROXY_PREFIX = "https://api.allorigins.win/raw?url=";
-// Если развернул свой Cloudflare Worker — замени на:
-// const CORS_PROXY_PREFIX = "https://ТВОЙ-WORKER.workers.dev/?url=";
-
 const CLASS_RU = {
   "Warrior":"Воин","Paladin":"Паладин","Hunter":"Охотник","Rogue":"Разбойник",
   "Priest":"Жрец","Death Knight":"Рыцарь смерти","Shaman":"Шаман","Mage":"Маг",
   "Warlock":"Чернокнижник","Monk":"Монах","Druid":"Друид",
   "Demon Hunter":"Охотник на демонов","Evoker":"Эвокер"
 };
-
 const CLASS_COLOR = {
   "Warrior":"#C79C6E","Paladin":"#F58CBA","Hunter":"#ABD473","Rogue":"#FFF569",
   "Priest":"#FFFFFF","Death Knight":"#C41F3B","Shaman":"#0070DE","Mage":"#69CCF0",
   "Warlock":"#9482C9","Monk":"#00FF96","Druid":"#FF7D0A",
   "Demon Hunter":"#A330C9","Evoker":"#33937F"
 };
-
 const ROLE_RU = { "TANK":"Танк", "HEALING":"Хилер", "DPS":"ДД" };
 const ROLE_CLASS = { "TANK":"role-tank", "HEALING":"role-heal", "DPS":"role-dps" };
-
-let streamers = [];
 
 function keyTierClass(level){
   if(level >= 20) return "tier-extreme";
@@ -470,21 +417,12 @@ function keyTierClass(level){
   return "tier-low";
 }
 
-function slugify(v){
-  return v.trim().toLowerCase().replace(/\s+/g,"-");
-}
-
-function renderEmptyState(){
-  document.getElementById("emptyState").style.display = streamers.length ? "none" : "block";
-  document.getElementById("tbl").style.display = streamers.length ? "table" : "none";
-}
-
-function renderRows(){
+function renderRows(streamers){
   const tbody = document.getElementById("tbody");
   tbody.innerHTML = "";
-  streamers.forEach((s, idx) => {
-    const tr = document.createElement("tr");
 
+  streamers.forEach(s => {
+    const tr = document.createElement("tr");
     const twitchUrl = "https://twitch.tv/" + s.twitch;
     const rioUrl = "https://raider.io/characters/" + s.region + "/" + s.realm + "/" + s.char;
 
@@ -493,9 +431,7 @@ function renderRows(){
     let keyCell = '<span class="state-tag">—</span>';
     let scoreCell = '<span class="state-tag">—</span>';
 
-    if(s.status === "loading"){
-      classCell = roleCell = keyCell = scoreCell = '<span class="state-tag state-loading">загрузка…</span>';
-    } else if(s.status === "error"){
+    if(s.status === "error"){
       const msg = s.error || "ошибка";
       classCell = roleCell = keyCell = scoreCell =
         `<span class="state-tag state-error" title="${msg}">${msg}</span>`;
@@ -527,10 +463,8 @@ function renderRows(){
     tr.innerHTML = `
       <td>
         <div class="streamer-cell">
-          <div>
-            <a href="${twitchUrl}" target="_blank" rel="noopener">${s.twitch}</a>
-            <span class="streamer-sub">${s.char}-${s.realm} (${s.region.toUpperCase()})</span>
-          </div>
+          <a href="${twitchUrl}" target="_blank" rel="noopener">${s.twitch}</a>
+          <span class="streamer-sub">${s.char}-${s.realm} (${s.region.toUpperCase()})</span>
         </div>
       </td>
       <td>${classCell}</td>
@@ -538,66 +472,42 @@ function renderRows(){
       <td>${keyCell}</td>
       <td>${scoreCell}</td>
       <td><a class="rio-link" href="${rioUrl}" target="_blank" rel="noopener">Raider.IO ↗</a></td>
-      <td><button class="remove-btn" title="Удалить" data-idx="${idx}">✕</button></td>
     `;
     tbody.appendChild(tr);
   });
-
-  tbody.querySelectorAll(".remove-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      streamers.splice(Number(btn.dataset.idx), 1);
-      renderRows();
-      renderEmptyState();
-    });
-  });
-
-  renderEmptyState();
 }
 
-async function fetchStreamer(s){
-  s.status = "loading";
-  renderRows();
+async function loadData(){
   try{
-    const params = new URLSearchParams({
-      region: s.region,
-      realm: s.realm,
-      name: s.char,
-      fields: "mythic_plus_scores_by_season:current,mythic_plus_best_runs"
-    });
-    const targetUrl = API_BASE + "?" + params.toString();
-    const res = await fetch(CORS_PROXY_PREFIX + encodeURIComponent(targetUrl));
-    if(!res.ok){
-      let bodyMsg = "";
-      try{ const j = await res.json(); bodyMsg = j.message || ""; }catch(_){}
-      throw new Error("HTTP " + res.status + (bodyMsg ? (": " + bodyMsg) : ""));
-    }
-    const data = await res.json();
-    s.data = data;
-    s.status = "ok";
+    const res = await fetch("./data.json", { cache: "no-store" });
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    const json = await res.json();
+    const streamers = json.streamers || [];
+
+    document.getElementById("emptyState").style.display = streamers.length ? "none" : "block";
+    document.getElementById("tbl").style.display = streamers.length ? "table" : "none";
+    renderRows(streamers);
+
+    document.getElementById("statusText").textContent = json.updated_at
+      ? "Обновлено: " + new Date(json.updated_at).toLocaleString("ru-RU")
+      : "Ещё не обновлялось — запусти workflow в Actions";
   }catch(e){
-    s.status = "error";
-    // "Failed to fetch" здесь почти всегда значит CORS-блок (например при открытии
-    // страницы напрямую как file://) или отсутствие интернет-соединения —
-    // это не значит, что персонаж не найден.
-    s.error = e.message === "Failed to fetch"
-      ? "прокси недоступен — попробуй обновить ещё раз через пару секунд"
-      : e.message;
-    console.error("Raider.IO fetch failed for", s.char, s.realm, e);
+    document.getElementById("statusText").textContent = "Не удалось загрузить data.json: " + e.message;
+    console.error(e);
   }
-  renderRows();
 }
 
-async function fetchAll(){
-  document.getElementById("statusText").textContent = "Обновление…";
-  await Promise.all(streamers.map(fetchStreamer));
-  document.getElementById("statusText").textContent =
-    "Обновлено: " + new Date().toLocaleTimeString("ru-RU");
+// --- Черновик streamers.json ---
+let draft = [];
+
+function renderDraft(){
+  document.getElementById("jsonOut").value = JSON.stringify(draft, null, 2);
 }
 
 document.getElementById("btnAdd").addEventListener("click", () => {
   const twitch = document.getElementById("inTwitch").value.trim();
   const region = document.getElementById("inRegion").value;
-  const realm = slugify(document.getElementById("inRealm").value);
+  const realm = document.getElementById("inRealm").value.trim().toLowerCase().replace(/\s+/g,"-");
   const char = document.getElementById("inChar").value.trim();
 
   if(!twitch || !realm || !char){
@@ -605,18 +515,28 @@ document.getElementById("btnAdd").addEventListener("click", () => {
     return;
   }
 
-  const entry = { twitch, region, realm, char, status: "idle", data: null };
-  streamers.push(entry);
+  draft.push({ twitch, region, realm, char });
   document.getElementById("inTwitch").value = "";
   document.getElementById("inRealm").value = "";
   document.getElementById("inChar").value = "";
-  renderRows();
-  fetchStreamer(entry);
+  renderDraft();
 });
 
-document.getElementById("btnRefresh").addEventListener("click", fetchAll);
+document.getElementById("btnCopy").addEventListener("click", () => {
+  const ta = document.getElementById("jsonOut");
+  ta.select();
+  document.execCommand("copy");
+});
 
-renderRows();
+document.getElementById("btnDownload").addEventListener("click", () => {
+  const blob = new Blob([document.getElementById("jsonOut").value || "[]"], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "streamers.json";
+  a.click();
+});
+
+loadData();
 </script>
 </body>
 </html>
