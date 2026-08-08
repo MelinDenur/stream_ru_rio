@@ -54,8 +54,13 @@ def main():
             print(f"OK: {s['char']}-{s['realm']}")
         except urllib.error.HTTPError as e:
             entry["status"] = "error"
-            entry["error"] = f"HTTP {e.code}"
-            print(f"HTTP ERROR {e.code}: {s['char']}-{s['realm']}", file=sys.stderr)
+            try:
+                body = json.loads(e.read().decode("utf-8"))
+                detail = body.get("error") or body.get("message") or ""
+            except Exception:
+                detail = ""
+            entry["error"] = f"HTTP {e.code}" + (f": {detail}" if detail else "")
+            print(f"HTTP ERROR {e.code}: {s['char']}-{s['realm']} — {detail}", file=sys.stderr)
         except Exception as e:
             entry["status"] = "error"
             entry["error"] = str(e)
