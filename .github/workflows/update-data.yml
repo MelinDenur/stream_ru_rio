@@ -1,0 +1,36 @@
+name: Обновить данные M+
+
+on:
+  schedule:
+    # Каждые 30 минут. Формат cron — UTC-время, минуты/часы/день/месяц/день-недели.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "streamers.json"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Запросить Raider.IO и собрать data.json
+        run: python3 scripts/fetch_data.py
+
+      - name: Закоммитить изменения (если есть)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "Обновление данных M+ [auto]"
+          git push
