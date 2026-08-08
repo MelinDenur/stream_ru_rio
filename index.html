@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WoW Midnight — рейтинг стримеров по M+</title>
+<style>
+  :root{
+    --bg: #12121a;
+    --bg-panel: #1b1b28;
+    --bg-panel-2: #22222f;
+    --border: #33334a;
+    --text: #ece7d8;
+    --text-muted: #8d8da8;
+    --gold: #d4af6a;
+    --gold-dim: #8a7548;
+    --tier-low: #6bcf7f;
+    --tier-mid: #5b9bd5;
+    --tier-high: #a670e0;
+    --tier-vhigh: #e08a3c;
+    --tier-extreme: #e05252;
+    --tank: #5b9bd5;
+    --heal: #6bcf7f;
+    --dps: #e05252;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: radial-gradient(circle at 20% 0%, #1c1c2c 0%, var(--bg) 55%);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    min-height:100vh;
+    padding: 32px 20px 80px;
+  }
+
+  .wrap{ max-width: 1180px; margin:0 auto; }
+
+  header{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:20px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+  }
+
+  h1{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: clamp(22px, 3.2vw, 34px);
+    margin:0 0 6px;
+    color: var(--gold);
+    text-shadow: 0 0 22px rgba(212,175,106,0.25);
+  }
+
+  header p{
+    margin:0;
+    color: var(--text-muted);
+    font-size: 14px;
+    max-width: 560px;
+    line-height:1.5;
+  }
+
+  .season-tag{
+    font-size:12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--gold);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+
+  .panel{
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .panel h2{
+    margin:0 0 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight:600;
+  }
+
+  .add-form{
+    display:grid;
+    grid-template-columns: 1.1fr 0.7fr 1fr 1fr auto;
+    gap: 10px;
+  }
+
+  @media (max-width: 760px){
+    .add-form{ grid-template-columns: 1fr 1fr; }
+  }
+
+  .add-form input, .add-form select{
+    background: var(--bg-panel-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline:none;
+  }
+  .add-form input:focus, .add-form select:focus{
+    border-color: var(--gold-dim);
+  }
+
+  button{
+    cursor:pointer;
+    border:none;
+    border-radius: 8px;
+    font-weight:700;
+    font-size: 14px;
+    padding: 10px 16px;
+    transition: transform .12s ease, filter .12s ease;
+  }
+  button:hover{ filter:brightness(1.08); }
+  button:active{ transform: scale(0.98); }
+
+  .btn-gold{ background: var(--gold); color:#1b1608; }
+  .btn-ghost{
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .toolbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:12px;
+    margin: 4px 0 14px;
+    flex-wrap:wrap;
+  }
+
+  .toolbar .status{
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  table{
+    width:100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  thead th{
+    text-align:left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    font-weight:600;
+    padding: 0 12px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr{
+    border-bottom: 1px solid rgba(51,51,74,0.5);
+  }
+  tbody tr:hover{ background: rgba(255,255,255,0.02); }
+
+  tbody td{
+    padding: 12px;
+    vertical-align: middle;
+  }
+
+  .streamer-cell{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .streamer-cell a{
+    color: var(--text);
+    text-decoration:none;
+    font-weight:700;
+  }
+  .streamer-cell a:hover{ color: var(--gold); text-decoration: underline; }
+
+  .streamer-sub{
+    display:block;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight:400;
+    margin-top:2px;
+  }
+
+  .class-pill{
+    display:inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight:700;
+    background: rgba(255,255,255,0.06);
+  }
+
+  .role-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size: 12px;
+    font-weight:700;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .role-tank{ color:var(--tank); background: rgba(91,155,213,0.12); }
+  .role-heal{ color:var(--heal); background: rgba(107,207,127,0.12); }
+  .role-dps{ color:var(--dps); background: rgba(224,82,82,0.12); }
+
+  .key-badge{
+    display:inline-flex;
+    align-items:baseline;
+    gap:6px;
+    font-weight:800;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color:#0e0e14;
+  }
+  .key-badge small{
+    font-weight:600;
+    font-size: 11px;
+    opacity:0.75;
+  }
+  .tier-low{ background: var(--tier-low); }
+  .tier-mid{ background: var(--tier-mid); }
+  .tier-high{ background: var(--tier-high); color:#f6eeff; }
+  .tier-vhigh{ background: var(--tier-vhigh); }
+  .tier-extreme{ background: var(--tier-extreme); color:#fff0f0; }
+
+  .dungeon-name{
+    display:block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .score{
+    font-weight:700;
+    color: var(--gold);
+  }
+
+  .rio-link{
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration:none;
+    border: 1px solid var(--border);
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space:nowrap;
+  }
+  .rio-link:hover{ border-color: var(--gold-dim); color: var(--gold); }
+
+  .remove-btn{
+    background:none;
+    border:none;
+    color: var(--text-muted);
+    font-size: 16px;
+    cursor:pointer;
+    padding: 4px 8px;
+  }
+  .remove-btn:hover{ color: var(--tier-extreme); }
+
+  .empty-state{
+    text-align:center;
+    padding: 46px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state strong{ color: var(--text); display:block; margin-bottom:6px; font-size:15px;}
+
+  .state-tag{
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.05);
+    color: var(--text-muted);
+  }
+  .state-error{
+    color: var(--tier-extreme);
+    background: rgba(224,82,82,0.1);
+    white-space: normal;
+    display: inline-block;
+    max-width: 160px;
+    line-height: 1.4;
+  }
+  .state-loading{ color: var(--gold); background: rgba(212,175,106,0.1); }
+
+  footer{
+    margin-top: 30px;
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height:1.7;
+  }
+  footer h3{
+    color: var(--text);
+    font-size: 13px;
+    margin: 0 0 8px;
+  }
+  footer code{
+    background: var(--bg-panel-2);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    button{ transition:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>M+ рейтинг стримеров</h1>
+      <p>Русскоязычные стримеры категории World of Warcraft — класс, роль и максимально закрытый ключ. Данные подтягиваются напрямую из Raider.IO.</p>
+    </div>
+    <div class="season-tag" id="seasonTag">Midnight · Сезон 1</div>
+  </header>
+
+  <div class="panel">
+    <h2>Добавить стримера</h2>
+    <div class="add-form">
+      <input type="text" id="inTwitch" placeholder="Twitch-ник (напр. streamername)">
+      <select id="inRegion">
+        <option value="eu">EU</option>
+        <option value="us">US</option>
+        <option value="kr">KR</option>
+        <option value="tw">TW</option>
+      </select>
+      <input type="text" id="inRealm" placeholder="Реалм (напр. howling-fjord)">
+      <input type="text" id="inChar" placeholder="Имя персонажа">
+      <button class="btn-gold" id="btnAdd">Добавить</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="toolbar">
+      <h2 style="margin:0;">Список</h2>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="status" id="statusText"></span>
+        <button class="btn-ghost" id="btnRefresh">Обновить все данные</button>
+      </div>
+    </div>
+
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th>Стример</th>
+          <th>Класс</th>
+          <th>Роль</th>
+          <th>Максимальный ключ</th>
+          <th>M+ Score</th>
+          <th>Профиль</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <div class="empty-state" id="emptyState">
+      <strong>Список пуст</strong>
+      Добавьте первого стримера через форму выше — Twitch-ник, регион, реалм и имя персонажа.
+    </div>
+  </div>
+
+  <footer>
+    <h3>Как найти реалм и имя персонажа стримера</h3>
+    Если в описании канала стоит расширение Raider.IO (WoW M+) или указан battletag — открой ссылку из панели ниже плеера,
+    она обычно выглядит как <code>raider.io/characters/eu/realm/CharacterName</code>: возьми регион, реалм и имя оттуда.
+    Если такой ссылки нет — многие стримеры держат чат-команду вроде <code>!rio</code> или <code>!армори</code>,
+    либо публикуют battletag в панелях «О канале» / Discord. Реалм нужно вводить в формате из URL Raider.IO — например
+    «Howling Fjord» → <code>howling-fjord</code>.
+    <br><br>
+    Страница всегда запрашивает данные <strong>текущего сезона</strong> (без указания season в API) — поэтому при выходе
+    второго и последующих сезонов Midnight ничего менять не нужно, таблица сама покажет актуальные ключи и Score.
+    Если у API произойдёт ошибка CORS в твоём браузере — открой файл через локальный сервер
+    (например, <code>npx serve</code>) вместо прямого открытия файла с диска.
+  </footer>
+
+</div>
+
+<script>
+const API_BASE = "https://raider.io/api/v2/characters/profile";
+
+const CLASS_RU = {
+  "Warrior":"Воин","Paladin":"Паладин","Hunter":"Охотник","Rogue":"Разбойник",
+  "Priest":"Жрец","Death Knight":"Рыцарь смерти","Shaman":"Шаман","Mage":"Маг",
+  "Warlock":"Чернокнижник","Monk":"Монах","Druid":"Друид",
+  "Demon Hunter":"Охотник на демонов","Evoker":"Эвокер"
+};
+
+const CLASS_COLOR = {
+  "Warrior":"#C79C6E","Paladin":"#F58CBA","Hunter":"#ABD473","Rogue":"#FFF569",
+  "Priest":"#FFFFFF","Death Knight":"#C41F3B","Shaman":"#0070DE","Mage":"#69CCF0",
+  "Warlock":"#9482C9","Monk":"#00FF96","Druid":"#FF7D0A",
+  "Demon Hunter":"#A330C9","Evoker":"#33937F"
+};
+
+const ROLE_RU = { "TANK":"Танк", "HEALING":"Хилер", "DPS":"ДД" };
+const ROLE_CLASS = { "TANK":"role-tank", "HEALING":"role-heal", "DPS":"role-dps" };
+
+let streamers = [];
+
+function keyTierClass(level){
+  if(level >= 20) return "tier-extreme";
+  if(level >= 16) return "tier-vhigh";
+  if(level >= 12) return "tier-high";
+  if(level >= 7) return "tier-mid";
+  return "tier-low";
+}
+
+function slugify(v){
+  return v.trim().toLowerCase().replace(/\s+/g,"-");
+}
+
+function renderEmptyState(){
+  document.getElementById("emptyState").style.display = streamers.length ? "none" : "block";
+  document.getElementById("tbl").style.display = streamers.length ? "table" : "none";
+}
+
+function renderRows(){
+  const tbody = document.getElementById("tbody");
+  tbody.innerHTML = "";
+  streamers.forEach((s, idx) => {
+    const tr = document.createElement("tr");
+
+    const twitchUrl = "https://twitch.tv/" + s.twitch;
+    const rioUrl = "https://raider.io/characters/" + s.region + "/" + s.realm + "/" + s.char;
+
+    let classCell = '<span class="state-tag">—</span>';
+    let roleCell = '<span class="state-tag">—</span>';
+    let keyCell = '<span class="state-tag">—</span>';
+    let scoreCell = '<span class="state-tag">—</span>';
+
+    if(s.status === "loading"){
+      classCell = roleCell = keyCell = scoreCell = '<span class="state-tag state-loading">загрузка…</span>';
+    } else if(s.status === "error"){
+      const msg = s.error || "ошибка";
+      classCell = roleCell = keyCell = scoreCell =
+        `<span class="state-tag state-error" title="${msg}">${msg}</span>`;
+    } else if(s.status === "ok" && s.data){
+      const d = s.data;
+      const classRu = CLASS_RU[d.class] || d.class;
+      const color = CLASS_COLOR[d.class] || "#ece7d8";
+      classCell = `<span class="class-pill" style="color:${color}; border:1px solid ${color}55;">${classRu}</span>`;
+
+      const roleKey = d.active_spec_role;
+      const roleRu = ROLE_RU[roleKey] || roleKey || "—";
+      const roleCls = ROLE_CLASS[roleKey] || "";
+      roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
+
+      const runs = d.mythic_plus_best_runs || [];
+      if(runs.length){
+        const best = runs.reduce((a,b) => (b.mythic_level > a.mythic_level ? b : a), runs[0]);
+        const tier = keyTierClass(best.mythic_level);
+        keyCell = `<span class="key-badge ${tier}">+${best.mythic_level}</span><span class="dungeon-name">${best.dungeon}</span>`;
+      } else {
+        keyCell = '<span class="state-tag">нет ключей</span>';
+      }
+
+      const scoreObj = (d.mythic_plus_scores_by_season && d.mythic_plus_scores_by_season[0]) || null;
+      const score = scoreObj ? Math.round(scoreObj.scores.all) : null;
+      scoreCell = score !== null ? `<span class="score">${score}</span>` : '<span class="state-tag">—</span>';
+    }
+
+    tr.innerHTML = `
+      <td>
+        <div class="streamer-cell">
+          <div>
+            <a href="${twitchUrl}" target="_blank" rel="noopener">${s.twitch}</a>
+            <span class="streamer-sub">${s.char}-${s.realm} (${s.region.toUpperCase()})</span>
+          </div>
+        </div>
+      </td>
+      <td>${classCell}</td>
+      <td>${roleCell}</td>
+      <td>${keyCell}</td>
+      <td>${scoreCell}</td>
+      <td><a class="rio-link" href="${rioUrl}" target="_blank" rel="noopener">Raider.IO ↗</a></td>
+      <td><button class="remove-btn" title="Удалить" data-idx="${idx}">✕</button></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  tbody.querySelectorAll(".remove-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      streamers.splice(Number(btn.dataset.idx), 1);
+      renderRows();
+      renderEmptyState();
+    });
+  });
+
+  renderEmptyState();
+}
+
+async function fetchStreamer(s){
+  s.status = "loading";
+  renderRows();
+  try{
+    const params = new URLSearchParams({
+      region: s.region,
+      realm: s.realm,
+      name: s.char,
+      fields: "mythic_plus_scores_by_season:current,mythic_plus_best_runs"
+    });
+    const res = await fetch(API_BASE + "?" + params.toString());
+    if(!res.ok){
+      let bodyMsg = "";
+      try{ const j = await res.json(); bodyMsg = j.message || ""; }catch(_){}
+      throw new Error("HTTP " + res.status + (bodyMsg ? (": " + bodyMsg) : ""));
+    }
+    const data = await res.json();
+    s.data = data;
+    s.status = "ok";
+  }catch(e){
+    s.status = "error";
+    // "Failed to fetch" здесь почти всегда значит CORS-блок (например при открытии
+    // страницы напрямую как file://) или отсутствие интернет-соединения —
+    // это не значит, что персонаж не найден.
+    s.error = e.message === "Failed to fetch"
+      ? "сеть/CORS — открой страницу через http(s), не file://"
+      : e.message;
+    console.error("Raider.IO fetch failed for", s.char, s.realm, e);
+  }
+  renderRows();
+}
+
+async function fetchAll(){
+  document.getElementById("statusText").textContent = "Обновление…";
+  await Promise.all(streamers.map(fetchStreamer));
+  document.getElementById("statusText").textContent =
+    "Обновлено: " + new Date().toLocaleTimeString("ru-RU");
+}
+
+document.getElementById("btnAdd").addEventListener("click", () => {
+  const twitch = document.getElementById("inTwitch").value.trim();
+  const region = document.getElementById("inRegion").value;
+  const realm = slugify(document.getElementById("inRealm").value);
+  const char = document.getElementById("inChar").value.trim();
+
+  if(!twitch || !realm || !char){
+    alert("Заполни Twitch-ник, реалм и имя персонажа.");
+    return;
+  }
+
+  const entry = { twitch, region, realm, char, status: "idle", data: null };
+  streamers.push(entry);
+  document.getElementById("inTwitch").value = "";
+  document.getElementById("inRealm").value = "";
+  document.getElementById("inChar").value = "";
+  renderRows();
+  fetchStreamer(entry);
+});
+
+document.getElementById("btnRefresh").addEventListener("click", fetchAll);
+
+renderRows();
+</script>
+</body>
+</html>
