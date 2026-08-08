@@ -1,10 +1,11 @@
 {
-  "updated_at": "2026-08-08T13:56:21.900040Z",
+  "updated_at": "2026-08-08T13:57:14.666547Z",
   "streamers": [
     {
       "twitch": "Khnja",
       "region": "eu",
       "realm": "howling-fjord",
+      "realm_ru": "Ревущий фьорд",
       "char": "Кхня",
       "status": "error",
       "error": "HTTP 404: Not Found"
@@ -13,6 +14,7 @@
       "twitch": "Yo_na_bi",
       "region": "eu",
       "realm": "howling-fjord",
+      "realm_ru": "Ревущий фьорд",
       "char": "Риосвинка",
       "status": "error",
       "error": "HTTP 404: Not Found"
@@ -21,6 +23,7 @@
       "twitch": "PeptarTV",
       "region": "eu",
       "realm": "howling-fjord",
+      "realm_ru": "Ревущий фьорд",
       "char": "Пепточка",
       "status": "error",
       "error": "HTTP 404: Not Found"
