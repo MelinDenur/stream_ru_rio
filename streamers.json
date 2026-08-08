@@ -1,8 +1,21 @@
 [
   {
-    "twitch": "ник_стримера",
+    "twitch": "Khnja",
     "region": "eu",
-    "realm": "howling-fjord",
-    "char": "ИмяПерсонажа"
+    "realm": "Ревущий-фьорд",
+    "char": "Кхня"
+  },
+  {
+    "twitch": "Yo_na_bi",
+    "region": "eu",
+    "realm": "Ревущий-фьорд",
+    "char": "Риосвинка"
+  },
+  {
+    "twitch": "PeptarTV",
+    "region": "eu",
+    "realm": "Ревущий-фьорд",
+    "char": "Пепточка"
   }
+  
 ]
