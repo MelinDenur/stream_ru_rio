@@ -98,7 +98,7 @@
 
   .add-form{
     display:grid;
-    grid-template-columns: 1.1fr 0.7fr 1fr 1fr auto;
+    grid-template-columns: 1fr 0.6fr 1fr 1fr 1fr auto;
     gap: 10px;
   }
 
@@ -358,7 +358,8 @@
         <option value="kr">KR</option>
         <option value="tw">TW</option>
       </select>
-      <input type="text" id="inRealm" placeholder="Реалм (напр. howling-fjord)">
+      <input type="text" id="inRealm" placeholder="Реалм-slug (напр. howling-fjord)">
+      <input type="text" id="inRealmRu" placeholder="Название реалма (напр. Ревущий фьорд)">
       <input type="text" id="inChar" placeholder="Имя персонажа">
       <button class="btn-gold" id="btnAdd">Добавить в черновик</button>
     </div>
@@ -464,7 +465,7 @@ function renderRows(streamers){
       <td>
         <div class="streamer-cell">
           <a href="${twitchUrl}" target="_blank" rel="noopener">${s.twitch}</a>
-          <span class="streamer-sub">${s.char}-${s.realm} (${s.region.toUpperCase()})</span>
+          <span class="streamer-sub" title="slug: ${s.realm}">${s.char} · ${s.realm_ru || s.realm} (${s.region.toUpperCase()})</span>
         </div>
       </td>
       <td>${classCell}</td>
@@ -508,6 +509,7 @@ document.getElementById("btnAdd").addEventListener("click", () => {
   const twitch = document.getElementById("inTwitch").value.trim();
   const region = document.getElementById("inRegion").value;
   const realm = document.getElementById("inRealm").value.trim().toLowerCase().replace(/\s+/g,"-");
+  const realmRu = document.getElementById("inRealmRu").value.trim();
   const char = document.getElementById("inChar").value.trim();
 
   if(!twitch || !realm || !char){
@@ -515,9 +517,12 @@ document.getElementById("btnAdd").addEventListener("click", () => {
     return;
   }
 
-  draft.push({ twitch, region, realm, char });
+  const entry = { twitch, region, realm, char };
+  if(realmRu) entry.realm_ru = realmRu;
+  draft.push(entry);
   document.getElementById("inTwitch").value = "";
   document.getElementById("inRealm").value = "";
+  document.getElementById("inRealmRu").value = "";
   document.getElementById("inChar").value = "";
   renderDraft();
 });
