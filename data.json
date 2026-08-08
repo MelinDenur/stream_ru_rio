@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-08T13:41:48.931812Z",
+  "updated_at": "2026-08-08T13:44:50.298991Z",
   "streamers": [
     {
       "twitch": "Khnja",
       "region": "eu",
-      "realm": "Ревущий-фьорд",
+      "realm": "howling-fjord",
       "char": "Кхня",
       "status": "error",
       "error": "HTTP 404"
@@ -12,7 +12,7 @@
     {
       "twitch": "Yo_na_bi",
       "region": "eu",
-      "realm": "Ревущий-фьорд",
+      "realm": "howling-fjord",
       "char": "Риосвинка",
       "status": "error",
       "error": "HTTP 404"
@@ -20,7 +20,7 @@
     {
       "twitch": "PeptarTV",
       "region": "eu",
-      "realm": "Ревущий-фьорд",
+      "realm": "howling-fjord",
       "char": "Пепточка",
       "status": "error",
       "error": "HTTP 404"
