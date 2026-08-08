@@ -45,6 +45,7 @@ def main():
             "twitch": s["twitch"],
             "region": s["region"],
             "realm": s["realm"],
+            "realm_ru": s.get("realm_ru"),
             "char": s["char"],
         }
         try:
