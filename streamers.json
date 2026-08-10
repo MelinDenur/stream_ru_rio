@@ -47,5 +47,12 @@
     "realm": "Howling Fjord",
     "realm_ru": "Ревущий фьорд",
     "char": "Мидсу"
+  },
+  {
+    "twitch": "nevodka",
+    "region": "eu",
+    "realm": "Draenor",
+    "realm_ru": "Draenor",
+    "char": "Nevodkan"
   }
 ]
