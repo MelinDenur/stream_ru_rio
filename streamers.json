@@ -26,5 +26,19 @@
     "realm": "silvermoon",
     "realm_ru": "Silvermoon",
     "char": "Shotta"
+  },
+  {
+    "twitch": "VzBu4kauY",
+    "region": "eu",
+    "realm": "Howling Fjord",
+    "realm_ru": "Ревущий фьорд",
+    "char": "Взбучкаю"
+  },
+  {
+    "twitch": "temkanikeas",
+    "region": "eu",
+    "realm": "Howling Fjord",
+    "realm_ru": "Ревущий фьорд",
+    "char": "Темканайк"
   }
 ]
