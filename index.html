@@ -447,7 +447,9 @@ function renderRows(streamers){
       const roleCls = ROLE_CLASS[roleKey] || "";
       roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
 
-      const runs = d.mythic_plus_best_runs || [];
+      const runs = (d.mythic_plus_highest_level_runs && d.mythic_plus_highest_level_runs.length)
+        ? d.mythic_plus_highest_level_runs
+        : (d.mythic_plus_best_runs || []);
       if(runs.length){
         const best = runs.reduce((a,b) => (b.mythic_level > a.mythic_level ? b : a), runs[0]);
         const tier = keyTierClass(best.mythic_level);
