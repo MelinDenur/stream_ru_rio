@@ -349,12 +349,11 @@
   </div>
 
   <div class="panel">
-    <h2>Добавить стримера в streamers.json</h2>
+    <h2>Предложить стримера</h2>
     <p style="color:var(--text-muted); font-size:13px; margin-top:-4px;">
-      Страница на GitHub Pages статична и не может сама писать в репозиторий — заполни форму,
-      скопируй получившийся JSON и вставь его в файл <code>streamers.json</code> в репозитории
-      (или скачай файл и загрузи вместо старого). После коммита workflow подхватит изменения
-      автоматически (см. триггер <code>push: paths: streamers.json</code>) или запусти его вручную во вкладке Actions.
+      Заполни поля ниже — снизу автоматически соберётся готовый JSON-код. Скопируй его (кнопка
+      «Скопировать» или «Скачать») и пришли мне в Telegram или на почту (контакты внизу страницы) —
+      я просто вставлю его в список, без лишних вопросов и ошибок в написании реалма.
     </p>
     <div class="add-form">
       <input type="text" id="inTwitch" placeholder="Twitch-ник (напр. streamername)">
@@ -367,10 +366,10 @@
       <input type="text" id="inRealm" placeholder="Реалм-slug (напр. howling-fjord)">
       <input type="text" id="inRealmRu" placeholder="Название реалма (напр. Ревущий фьорд)">
       <input type="text" id="inChar" placeholder="Имя персонажа">
-      <button class="btn-gold" id="btnAdd">Добавить в черновик</button>
+      <button class="btn-gold" id="btnAdd">Добавить в список</button>
     </div>
     <div style="margin-top:14px;">
-      <textarea id="jsonOut" readonly placeholder="Здесь появится содержимое streamers.json..."></textarea>
+      <textarea id="jsonOut" readonly placeholder="Здесь появится готовый код — скопируй и пришли мне"></textarea>
       <div style="display:flex; gap:10px; margin-top:10px;">
         <button class="btn-ghost" id="btnCopy">Скопировать</button>
         <button class="btn-ghost" id="btnDownload">Скачать streamers.json</button>
