@@ -301,6 +301,12 @@
     border: 1px solid var(--border);
   }
   footer ol{ padding-left:18px; margin:8px 0; }
+  footer a{
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  footer a:hover{ text-decoration: underline; }
 
   @media (prefers-reduced-motion: reduce){ button{ transition:none; } }
 </style>
@@ -373,23 +379,16 @@
   </div>
 
   <footer>
-    <h3>Как это устроено</h3>
-    Запросы к Raider.IO выполняются не из браузера, а на сервере GitHub Actions по расписанию
-    (workflow <code>.github/workflows/update-data.yml</code>) — поэтому проблема CORS не возникает
-    вообще, никакие прокси не нужны. Скрипт <code>scripts/fetch_data.py</code> читает
-    <code>streamers.json</code>, запрашивает Raider.IO и пишет результат в <code>data.json</code>,
-    который эта страница просто подгружает как обычный статический файл со своего же домена.
+    <h3>Хочешь предложить стримера?</h3>
+    Если знаешь русскоязычного стримера категории World of Warcraft, который активно фармит Mythic+
+    и которого здесь не хватает — напиши мне. Пришли Twitch-ник стримера и, если знаешь, реалм и имя
+    его основного персонажа (или просто ссылку на его профиль на Raider.IO) — остальное я найду сам.
     <br><br>
-    Season в запросе не указывается — Raider.IO по умолчанию отдаёт данные <strong>текущего сезона</strong>,
-    так что при выходе Midnight Season 2 и далее менять ничего не нужно.
-
-    <h3>Первый запуск</h3>
-    <ol>
-      <li>Убедись, что в настройках репозитория (Settings → Actions → General → Workflow permissions) включено «Read and write permissions» — иначе workflow не сможет закоммитить data.json.</li>
-      <li>Отредактируй <code>streamers.json</code> (через форму выше или вручную) и запушь.</li>
-      <li>Зайди во вкладку Actions → «Обновить данные M+» → Run workflow, чтобы не ждать первый автозапуск по расписанию.</li>
-      <li>Через минуту-две обнови страницу — данные подтянутся из свежего data.json.</li>
-    </ol>
+    <strong>Email:</strong> <a href="mailto:andrej@khnja.ru">andrej@khnja.ru</a><br>
+    <strong>Telegram:</strong> <a href="https://t.me/andrej_khnja" target="_blank" rel="noopener">@andrej_khnja</a>
+    <br><br>
+    Таблица обновляется автоматически несколько раз в день, так что после добавления новый стример
+    появится здесь без ручных действий с твоей стороны.
   </footer>
 
 </div>
