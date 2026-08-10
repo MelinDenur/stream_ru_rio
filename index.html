@@ -169,6 +169,20 @@
     border-bottom: 1px solid var(--border);
   }
 
+  thead th.sortable{
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th.sortable:hover{ color: var(--text); }
+  thead th.sortable.active{ color: var(--gold); }
+  .sort-arrow{
+    display:inline-block;
+    margin-left: 4px;
+    font-size: 10px;
+    opacity: 0.6;
+  }
+
   tbody tr{
     border-bottom: 1px solid rgba(51,51,74,0.5);
   }
@@ -331,11 +345,11 @@
     <table id="tbl" style="display:none;">
       <thead>
         <tr>
-          <th>Стример</th>
-          <th>Класс</th>
-          <th>Роль</th>
-          <th>Максимальный ключ</th>
-          <th>M+ Score</th>
+          <th class="sortable" data-sort="twitch">Стример<span class="sort-arrow"></span></th>
+          <th class="sortable" data-sort="class">Класс<span class="sort-arrow"></span></th>
+          <th class="sortable" data-sort="role">Роль<span class="sort-arrow"></span></th>
+          <th class="sortable" data-sort="key">Максимальный ключ<span class="sort-arrow"></span></th>
+          <th class="sortable" data-sort="score">M+ Score<span class="sort-arrow"></span></th>
           <th>Профиль</th>
         </tr>
       </thead>
@@ -415,6 +429,70 @@ function keyTierClass(level){
   return "tier-low";
 }
 
+function computeDisplay(s){
+  // Считает все производные значения один раз — используется и для рендера ячеек,
+  // и как источник значений для сортировки столбцов.
+  const out = {
+    classCell: '<span class="state-tag">—</span>',
+    roleCell: '<span class="state-tag">—</span>',
+    keyCell: '<span class="state-tag">—</span>',
+    scoreCell: '<span class="state-tag">—</span>',
+    sortClass: "",
+    sortRole: "",
+    sortKey: -1,
+    sortScore: -1,
+  };
+
+  if(s.status === "error"){
+    const msg = s.error || "ошибка";
+    out.classCell = out.roleCell = out.keyCell = out.scoreCell =
+      `<span class="state-tag state-error" title="${msg}">${msg}</span>`;
+    return out;
+  }
+  if(!(s.status === "ok" && s.data)) return out;
+
+  const d = s.data;
+  const classRu = CLASS_RU[d.class] || d.class;
+  const color = CLASS_COLOR[d.class] || "#ece7d8";
+  out.classCell = `<span class="class-pill" style="color:${color}; border:1px solid ${color}55;">${classRu}</span>`;
+  out.sortClass = classRu;
+
+  const runs = (d.mythic_plus_highest_level_runs && d.mythic_plus_highest_level_runs.length)
+    ? d.mythic_plus_highest_level_runs
+    : (d.mythic_plus_best_runs || []);
+
+  if(runs.length){
+    const best = runs.reduce((a,b) => (b.mythic_level > a.mythic_level ? b : a), runs[0]);
+    const tier = keyTierClass(best.mythic_level);
+    out.keyCell = `<span class="key-badge ${tier}">+${best.mythic_level}</span><span class="dungeon-name">${best.dungeon}</span>`;
+    out.sortKey = best.mythic_level;
+
+    // Роль/спек берём из самого забега (best.role / best.spec.name) — это то,
+    // на чём реально был закрыт максимальный ключ, а не текущий активный спек
+    // персонажа в игре прямо сейчас (это могло смениться после забега).
+    const roleKey = (best.role || "").toUpperCase();
+    const roleRu = ROLE_RU[roleKey] || best.role || "—";
+    const roleCls = ROLE_CLASS[roleKey] || "";
+    const specName = (best.spec && best.spec.name) || d.active_spec_name || "";
+    out.roleCell = `<span class="role-pill ${roleCls}">${specName} · ${roleRu}</span>`;
+    out.sortRole = roleRu;
+  } else {
+    out.keyCell = '<span class="state-tag">нет ключей</span>';
+    const roleKey = d.active_spec_role;
+    const roleRu = ROLE_RU[roleKey] || roleKey || "—";
+    const roleCls = ROLE_CLASS[roleKey] || "";
+    out.roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
+    out.sortRole = roleRu;
+  }
+
+  const scoreObj = (d.mythic_plus_scores_by_season && d.mythic_plus_scores_by_season[0]) || null;
+  const score = scoreObj ? Math.round(scoreObj.scores.all) : null;
+  out.scoreCell = score !== null ? `<span class="score">${score}</span>` : '<span class="state-tag">—</span>';
+  out.sortScore = score !== null ? score : -1;
+
+  return out;
+}
+
 function renderRows(streamers){
   const tbody = document.getElementById("tbody");
   tbody.innerHTML = "";
@@ -423,52 +501,7 @@ function renderRows(streamers){
     const tr = document.createElement("tr");
     const twitchUrl = "https://twitch.tv/" + s.twitch;
     const rioUrl = "https://raider.io/characters/" + s.region + "/" + s.realm + "/" + s.char;
-
-    let classCell = '<span class="state-tag">—</span>';
-    let roleCell = '<span class="state-tag">—</span>';
-    let keyCell = '<span class="state-tag">—</span>';
-    let scoreCell = '<span class="state-tag">—</span>';
-
-    if(s.status === "error"){
-      const msg = s.error || "ошибка";
-      classCell = roleCell = keyCell = scoreCell =
-        `<span class="state-tag state-error" title="${msg}">${msg}</span>`;
-    } else if(s.status === "ok" && s.data){
-      const d = s.data;
-      const classRu = CLASS_RU[d.class] || d.class;
-      const color = CLASS_COLOR[d.class] || "#ece7d8";
-      classCell = `<span class="class-pill" style="color:${color}; border:1px solid ${color}55;">${classRu}</span>`;
-
-      const runs = (d.mythic_plus_highest_level_runs && d.mythic_plus_highest_level_runs.length)
-        ? d.mythic_plus_highest_level_runs
-        : (d.mythic_plus_best_runs || []);
-
-      if(runs.length){
-        const best = runs.reduce((a,b) => (b.mythic_level > a.mythic_level ? b : a), runs[0]);
-        const tier = keyTierClass(best.mythic_level);
-        keyCell = `<span class="key-badge ${tier}">+${best.mythic_level}</span><span class="dungeon-name">${best.dungeon}</span>`;
-
-        // Роль/спек берём из самого забега (best.role / best.spec.name) — это то,
-        // на чём реально был закрыт максимальный ключ, а не текущий активный спек
-        // персонажа в игре прямо сейчас (это могло смениться после забега).
-        const roleKey = (best.role || "").toUpperCase();
-        const roleRu = ROLE_RU[roleKey] || best.role || "—";
-        const roleCls = ROLE_CLASS[roleKey] || "";
-        const specName = (best.spec && best.spec.name) || d.active_spec_name || "";
-        roleCell = `<span class="role-pill ${roleCls}">${specName} · ${roleRu}</span>`;
-      } else {
-        keyCell = '<span class="state-tag">нет ключей</span>';
-        // Нет забегов в сезоне — показываем хотя бы текущий активный спек как ориентир
-        const roleKey = d.active_spec_role;
-        const roleRu = ROLE_RU[roleKey] || roleKey || "—";
-        const roleCls = ROLE_CLASS[roleKey] || "";
-        roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
-      }
-
-      const scoreObj = (d.mythic_plus_scores_by_season && d.mythic_plus_scores_by_season[0]) || null;
-      const score = scoreObj ? Math.round(scoreObj.scores.all) : null;
-      scoreCell = score !== null ? `<span class="score">${score}</span>` : '<span class="state-tag">—</span>';
-    }
+    const disp = computeDisplay(s);
 
     tr.innerHTML = `
       <td>
@@ -477,26 +510,95 @@ function renderRows(streamers){
           <span class="streamer-sub" title="slug: ${s.realm}">${s.char} · ${s.realm_ru || s.realm} (${s.region.toUpperCase()})</span>
         </div>
       </td>
-      <td>${classCell}</td>
-      <td>${roleCell}</td>
-      <td>${keyCell}</td>
-      <td>${scoreCell}</td>
+      <td>${disp.classCell}</td>
+      <td>${disp.roleCell}</td>
+      <td>${disp.keyCell}</td>
+      <td>${disp.scoreCell}</td>
       <td><a class="rio-link" href="${rioUrl}" target="_blank" rel="noopener">Raider.IO ↗</a></td>
     `;
     tbody.appendChild(tr);
   });
 }
 
+// --- Сортировка по столбцам ---
+let currentStreamers = [];
+let sortState = { key: null, dir: 1 };
+
+function getSortValue(s, key){
+  const disp = computeDisplay(s);
+  switch(key){
+    case "twitch": return s.twitch.toLowerCase();
+    case "class": return disp.sortClass.toLowerCase();
+    case "role": return disp.sortRole.toLowerCase();
+    case "key": return disp.sortKey;
+    case "score": return disp.sortScore;
+    default: return "";
+  }
+}
+
+function applySort(){
+  if(!sortState.key){
+    renderRows(currentStreamers);
+    return;
+  }
+  const key = sortState.key;
+  currentStreamers.sort((a, b) => {
+    const va = getSortValue(a, key), vb = getSortValue(b, key);
+    if(typeof va === "number" && typeof vb === "number"){
+      return (va - vb) * sortState.dir;
+    }
+    return String(va).localeCompare(String(vb), "ru") * sortState.dir;
+  });
+  updateSortArrows();
+  renderRows(currentStreamers);
+}
+
+function toggleSort(key){
+  if(sortState.key === key){
+    sortState.dir *= -1;
+  } else {
+    sortState.key = key;
+    // Числовые столбцы по умолчанию сортируем от большего к меньшему,
+    // текстовые — по алфавиту (А→Я).
+    sortState.dir = (key === "key" || key === "score") ? -1 : 1;
+  }
+  applySort();
+}
+
+function updateSortArrows(){
+  document.querySelectorAll("th.sortable").forEach(th => {
+    const key = th.dataset.sort;
+    const arrow = th.querySelector(".sort-arrow");
+    th.classList.toggle("active", key === sortState.key);
+    if(key === sortState.key){
+      arrow.textContent = sortState.dir === 1 ? "▲" : "▼";
+    } else {
+      arrow.textContent = "";
+    }
+  });
+}
+
+document.querySelectorAll("th.sortable").forEach(th => {
+  th.addEventListener("click", () => toggleSort(th.dataset.sort));
+});
+
+
+
 async function loadData(){
   try{
     const res = await fetch("./data.json", { cache: "no-store" });
     if(!res.ok) throw new Error("HTTP " + res.status);
     const json = await res.json();
-    const streamers = json.streamers || [];
+    currentStreamers = json.streamers || [];
 
-    document.getElementById("emptyState").style.display = streamers.length ? "none" : "block";
-    document.getElementById("tbl").style.display = streamers.length ? "table" : "none";
-    renderRows(streamers);
+    document.getElementById("emptyState").style.display = currentStreamers.length ? "none" : "block";
+    document.getElementById("tbl").style.display = currentStreamers.length ? "table" : "none";
+
+    if(sortState.key){
+      applySort();
+    } else {
+      renderRows(currentStreamers);
+    }
 
     document.getElementById("statusText").textContent = json.updated_at
       ? "Обновлено: " + new Date(json.updated_at).toLocaleString("ru-RU")
