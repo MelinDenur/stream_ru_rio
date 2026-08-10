@@ -15,7 +15,7 @@ import urllib.error
 import datetime
 import sys
 
-API_BASE = "https://raider.io/api/v2/characters/profile"
+API_BASE = "https://raider.io/api/v1/characters/profile"
 
 
 def fetch_character(region, realm, char):
@@ -23,7 +23,7 @@ def fetch_character(region, realm, char):
         "region": region,
         "realm": realm,
         "name": char,
-        "fields": "mythic_plus_scores_by_season:current,mythic_plus_best_runs",
+        "fields": "mythic_plus_scores_by_season:current,mythic_plus_best_runs,mythic_plus_highest_level_runs",
     })
     url = f"{API_BASE}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "wow-streamers-personal-page/1.0"})
