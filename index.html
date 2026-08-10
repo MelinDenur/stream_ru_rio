@@ -333,7 +333,7 @@
       <h1>M+ рейтинг стримеров</h1>
       <p>Русскоязычные стримеры категории World of Warcraft — класс, роль и максимально закрытый ключ. Данные обновляются автоматически через GitHub Actions.</p>
     </div>
-    <div class="season-tag">Midnight · Сезон 1</div>
+    <div class="season-tag" id="seasonTag">загрузка сезона…</div>
   </header>
 
   <div class="panel">
@@ -584,6 +584,30 @@ document.querySelectorAll("th.sortable").forEach(th => {
 
 
 
+function formatSeasonSlug(slug){
+  // "season-tww-2" -> "TWW · Сезон 2", "season-midnight-1" -> "MIDNIGHT · Сезон 1"
+  // Работает для любого будущего аддона/сезона без ручных правок — просто
+  // разбирает то, что реально прислал Raider.IO.
+  const parts = slug.replace(/^season-/, "").split("-");
+  const num = parts[parts.length - 1];
+  const codeParts = /^\d+$/.test(num) ? parts.slice(0, -1) : parts;
+  const code = codeParts.join(" ").toUpperCase();
+  return /^\d+$/.test(num) ? `${code} · Сезон ${num}` : code;
+}
+
+function updateSeasonTag(streamers){
+  const tag = document.getElementById("seasonTag");
+  const withData = streamers.find(s => s.status === "ok" && s.data &&
+    s.data.mythic_plus_scores_by_season && s.data.mythic_plus_scores_by_season[0]);
+
+  if(!withData){
+    tag.textContent = "Сезон не определён";
+    return;
+  }
+  const slug = withData.data.mythic_plus_scores_by_season[0].season;
+  tag.textContent = formatSeasonSlug(slug);
+}
+
 async function loadData(){
   try{
     const res = await fetch("./data.json", { cache: "no-store" });
@@ -599,6 +623,8 @@ async function loadData(){
     } else {
       renderRows(currentStreamers);
     }
+
+    updateSeasonTag(currentStreamers);
 
     document.getElementById("statusText").textContent = json.updated_at
       ? "Обновлено: " + new Date(json.updated_at).toLocaleString("ru-RU")
