@@ -407,8 +407,8 @@ const CLASS_COLOR = {
   "Warlock":"#9482C9","Monk":"#00FF96","Druid":"#FF7D0A",
   "Demon Hunter":"#A330C9","Evoker":"#33937F"
 };
-const ROLE_RU = { "TANK":"Танк", "HEALING":"Хилер", "DPS":"ДД" };
-const ROLE_CLASS = { "TANK":"role-tank", "HEALING":"role-heal", "DPS":"role-dps" };
+const ROLE_RU = { "TANK":"Танк", "HEALING":"Хилер", "HEALER":"Хилер", "DPS":"ДД" };
+const ROLE_CLASS = { "TANK":"role-tank", "HEALING":"role-heal", "HEALER":"role-heal", "DPS":"role-dps" };
 
 function keyTierClass(level){
   if(level >= 20) return "tier-extreme";
@@ -442,20 +442,30 @@ function renderRows(streamers){
       const color = CLASS_COLOR[d.class] || "#ece7d8";
       classCell = `<span class="class-pill" style="color:${color}; border:1px solid ${color}55;">${classRu}</span>`;
 
-      const roleKey = d.active_spec_role;
-      const roleRu = ROLE_RU[roleKey] || roleKey || "—";
-      const roleCls = ROLE_CLASS[roleKey] || "";
-      roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
-
       const runs = (d.mythic_plus_highest_level_runs && d.mythic_plus_highest_level_runs.length)
         ? d.mythic_plus_highest_level_runs
         : (d.mythic_plus_best_runs || []);
+
       if(runs.length){
         const best = runs.reduce((a,b) => (b.mythic_level > a.mythic_level ? b : a), runs[0]);
         const tier = keyTierClass(best.mythic_level);
         keyCell = `<span class="key-badge ${tier}">+${best.mythic_level}</span><span class="dungeon-name">${best.dungeon}</span>`;
+
+        // Роль/спек берём из самого забега (best.role / best.spec.name) — это то,
+        // на чём реально был закрыт максимальный ключ, а не текущий активный спек
+        // персонажа в игре прямо сейчас (это могло смениться после забега).
+        const roleKey = (best.role || "").toUpperCase();
+        const roleRu = ROLE_RU[roleKey] || best.role || "—";
+        const roleCls = ROLE_CLASS[roleKey] || "";
+        const specName = (best.spec && best.spec.name) || d.active_spec_name || "";
+        roleCell = `<span class="role-pill ${roleCls}">${specName} · ${roleRu}</span>`;
       } else {
         keyCell = '<span class="state-tag">нет ключей</span>';
+        // Нет забегов в сезоне — показываем хотя бы текущий активный спек как ориентир
+        const roleKey = d.active_spec_role;
+        const roleRu = ROLE_RU[roleKey] || roleKey || "—";
+        const roleCls = ROLE_CLASS[roleKey] || "";
+        roleCell = `<span class="role-pill ${roleCls}">${d.active_spec_name || ""} · ${roleRu}</span>`;
       }
 
       const scoreObj = (d.mythic_plus_scores_by_season && d.mythic_plus_scores_by_season[0]) || null;
