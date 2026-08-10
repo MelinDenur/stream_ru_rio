@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T11:12:37.199653Z",
+  "updated_at": "2026-08-10T12:09:38.766064Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -2118,7 +2118,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/116/175436660-avatar.jpg?alt=/wow/static/images/2d/avatar/35-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-08T08:27:37.000Z",
+        "last_crawled_at": "2026-08-10T11:32:41.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Пепточка",
         "profile_banner": "hordebanner1",
         "mythic_plus_scores_by_season": [
