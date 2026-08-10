@@ -19,6 +19,12 @@
     "realm": "howling-fjord",
     "realm_ru": "Ревущий фьорд",
     "char": "Пепточка"
-  }
-  
+  },
+  {
+    "twitch": "RinAoyama",
+    "region": "eu",
+    "realm": "silvermoon",
+    "realm_ru": "Silvermoon",
+    "char": "Shotta"
+  },
 ]
