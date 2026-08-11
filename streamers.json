@@ -61,5 +61,33 @@
     "realm": "Tarren Mill",
     "realm_ru": "Tarren Mill",
     "char": "Nórthúr"
+  },
+  {
+    "twitch": "Murlocktyan",
+    "region": "eu",
+    "realm": "Twisting Nether",
+    "realm_ru": "Twisting Nether",
+    "char": "Murlgmrlgrlg"
+  },
+  {
+    "twitch": "Murlocktyan",
+    "region": "eu",
+    "realm": "Twisting Nether",
+    "realm_ru": "Twisting Nether",
+    "char": "Murlg"
+  },
+  {
+    "twitch": "PeptarTV",
+    "region": "eu",
+    "realm": "Twisting Nether",
+    "realm_ru": "Twisting Nether",
+    "char": "Pepme"
+  },
+  {
+    "twitch": "Khnja",
+    "region": "eu",
+    "realm": "Gordunni",
+    "realm_ru": "Gordunni",
+    "char": "Кхня"
   }
 ]
