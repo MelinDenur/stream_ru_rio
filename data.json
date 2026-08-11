@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T21:36:22.552753Z",
+  "updated_at": "2026-08-11T21:36:53.102924Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1056,8 +1056,1048 @@
       "realm": "howling-fjord",
       "realm_ru": "Ревущий фьорд",
       "char": "Риосвинка",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "data": {
+        "name": "Риосвинка",
+        "race": "Haranir",
+        "class": "Monk",
+        "active_spec_name": "Windwalker",
+        "active_spec_role": "DPS",
+        "gender": "female",
+        "faction": "horde",
+        "achievement_points": 28570,
+        "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/20/195784724-avatar.jpg?alt=/wow/static/images/2d/avatar/91-1.jpg",
+        "region": "eu",
+        "realm": "Howling Fjord",
+        "last_crawled_at": "2026-08-08T20:28:41.000Z",
+        "profile_url": "https://raider.io/characters/eu/howling-fjord/Риосвинка",
+        "profile_banner": "alliancebanner1",
+        "mythic_plus_scores_by_season": [
+          {
+            "season": "season-mn-1",
+            "scores": {
+              "all": 3894.1,
+              "dps": 1315,
+              "healer": 3894.1,
+              "tank": 0,
+              "spec_0": 0,
+              "spec_1": 3894.1,
+              "spec_2": 1315,
+              "spec_3": 0
+            },
+            "segments": {
+              "all": {
+                "score": 3894.1,
+                "color": "#e3598b"
+              },
+              "dps": {
+                "score": 1315,
+                "color": "#b1ff98"
+              },
+              "healer": {
+                "score": 3894.1,
+                "color": "#e3598b"
+              },
+              "tank": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_0": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_1": {
+                "score": 3894.1,
+                "color": "#e3598b"
+              },
+              "spec_2": {
+                "score": 1315,
+                "color": "#b1ff98"
+              },
+              "spec_3": {
+                "score": 0,
+                "color": "#ffffff"
+              }
+            }
+          }
+        ],
+        "mythic_plus_best_runs": [
+          {
+            "dungeon": "Skyreach",
+            "short_name": "SR",
+            "mythic_level": 21,
+            "completed_at": "2026-07-02T17:03:09.000Z",
+            "clear_time_ms": 1657503,
+            "keystone_run_id": 38523818,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 161,
+            "zone_id": 6988,
+            "zone_expansion_id": 5,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_arakkoaspires.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion5/base/skyreach.jpg",
+            "score": 500.5,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/38523818-21-skyreach",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Nexus-Point Xenas",
+            "short_name": "NPX",
+            "mythic_level": 20,
+            "completed_at": "2026-07-03T14:57:33.000Z",
+            "clear_time_ms": 1622499,
+            "keystone_run_id": 38636177,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 559,
+            "zone_id": 16573,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/nexuspoint-xenas.jpg",
+            "score": 488.7,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/38636177-20-nexuspoint-xenas",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Magisters' Terrace",
+            "short_name": "MT",
+            "mythic_level": 20,
+            "completed_at": "2026-06-03T19:58:28.000Z",
+            "clear_time_ms": 1921020,
+            "keystone_run_id": 32851134,
+            "par_time_ms": 2040999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 558,
+            "zone_id": 15829,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_magistersterrace.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/magisters-terrace.jpg",
+            "score": 487.2,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/32851134-20-magisters-terrace",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Pit of Saron",
+            "short_name": "POS",
+            "mythic_level": 20,
+            "completed_at": "2026-05-21T17:55:46.000Z",
+            "clear_time_ms": 1705072,
+            "keystone_run_id": 28427628,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 556,
+            "zone_id": 4813,
+            "zone_expansion_id": 2,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_icecrown_pitofsaron.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion2/base/pit-of-saron.jpg",
+            "score": 487,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/28427628-20-pit-of-saron",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Maisara Caverns",
+            "short_name": "MC",
+            "mythic_level": 20,
+            "completed_at": "2026-05-27T16:34:39.000Z",
+            "clear_time_ms": 1889345,
+            "keystone_run_id": 30556143,
+            "par_time_ms": 1980999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 560,
+            "zone_id": 16395,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_maisarahills.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/maisara-caverns.jpg",
+            "score": 486.7,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/30556143-20-maisara-caverns",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Algeth'ar Academy",
+            "short_name": "AA",
+            "mythic_level": 20,
+            "completed_at": "2026-06-06T16:54:01.000Z",
+            "clear_time_ms": 1818014,
+            "keystone_run_id": 33598155,
+            "par_time_ms": 1860999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 402,
+            "zone_id": 14032,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_dragonacademy.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/algethar-academy.jpg",
+            "score": 485.9,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/33598155-20-algethar-academy",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Windrunner Spire",
+            "short_name": "WS",
+            "mythic_level": 20,
+            "completed_at": "2026-06-24T18:37:13.000Z",
+            "clear_time_ms": 1940517,
+            "keystone_run_id": 37367916,
+            "par_time_ms": 1980999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 557,
+            "zone_id": 15808,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_windrunnerspire.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/windrunner-spire.jpg",
+            "score": 485.8,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/37367916-20-windrunner-spire",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Seat of the Triumvirate",
+            "short_name": "SEAT",
+            "mythic_level": 19,
+            "completed_at": "2026-05-24T16:54:17.000Z",
+            "clear_time_ms": 1917592,
+            "keystone_run_id": 29587367,
+            "par_time_ms": 2040999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 239,
+            "zone_id": 8910,
+            "zone_expansion_id": 6,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_triumvirate_darknaaru.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion6/base/seat-of-the-triumvirate.jpg",
+            "score": 472.3,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/29587367-19-seat-of-the-triumvirate",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          }
+        ],
+        "mythic_plus_highest_level_runs": [
+          {
+            "dungeon": "Skyreach",
+            "short_name": "SR",
+            "mythic_level": 21,
+            "completed_at": "2026-07-02T17:03:09.000Z",
+            "clear_time_ms": 1657503,
+            "keystone_run_id": 38523818,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 161,
+            "zone_id": 6988,
+            "zone_expansion_id": 5,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_arakkoaspires.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion5/base/skyreach.jpg",
+            "score": 500.5,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/38523818-21-skyreach",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Pit of Saron",
+            "short_name": "POS",
+            "mythic_level": 21,
+            "completed_at": "2026-05-27T17:19:47.000Z",
+            "clear_time_ms": 1855645,
+            "keystone_run_id": 30579421,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 0,
+            "map_challenge_mode_id": 556,
+            "zone_id": 4813,
+            "zone_expansion_id": 2,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_icecrown_pitofsaron.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion2/base/pit-of-saron.jpg",
+            "score": 318.9,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/30579421-21-pit-of-saron",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Algeth'ar Academy",
+            "short_name": "AA",
+            "mythic_level": 21,
+            "completed_at": "2026-07-04T18:24:25.000Z",
+            "clear_time_ms": 1909369,
+            "keystone_run_id": 38802222,
+            "par_time_ms": 1860999,
+            "num_keystone_upgrades": 0,
+            "map_challenge_mode_id": 402,
+            "zone_id": 14032,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_dragonacademy.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/algethar-academy.jpg",
+            "score": 319,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/38802222-21-algethar-academy",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Nexus-Point Xenas",
+            "short_name": "NPX",
+            "mythic_level": 20,
+            "completed_at": "2026-07-03T14:57:33.000Z",
+            "clear_time_ms": 1622499,
+            "keystone_run_id": 38636177,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 559,
+            "zone_id": 16573,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/nexuspoint-xenas.jpg",
+            "score": 488.7,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/38636177-20-nexuspoint-xenas",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Pit of Saron",
+            "short_name": "POS",
+            "mythic_level": 20,
+            "completed_at": "2026-05-21T17:55:46.000Z",
+            "clear_time_ms": 1705072,
+            "keystone_run_id": 28427628,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 556,
+            "zone_id": 4813,
+            "zone_expansion_id": 2,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_icecrown_pitofsaron.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion2/base/pit-of-saron.jpg",
+            "score": 487,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/28427628-20-pit-of-saron",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Algeth'ar Academy",
+            "short_name": "AA",
+            "mythic_level": 20,
+            "completed_at": "2026-06-06T16:54:01.000Z",
+            "clear_time_ms": 1818014,
+            "keystone_run_id": 33598155,
+            "par_time_ms": 1860999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 402,
+            "zone_id": 14032,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_dragonacademy.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/algethar-academy.jpg",
+            "score": 485.9,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/33598155-20-algethar-academy",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Maisara Caverns",
+            "short_name": "MC",
+            "mythic_level": 20,
+            "completed_at": "2026-05-27T16:34:39.000Z",
+            "clear_time_ms": 1889345,
+            "keystone_run_id": 30556143,
+            "par_time_ms": 1980999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 560,
+            "zone_id": 16395,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_maisarahills.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/maisara-caverns.jpg",
+            "score": 486.7,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/30556143-20-maisara-caverns",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Magisters' Terrace",
+            "short_name": "MT",
+            "mythic_level": 20,
+            "completed_at": "2026-06-03T19:58:28.000Z",
+            "clear_time_ms": 1921020,
+            "keystone_run_id": 32851134,
+            "par_time_ms": 2040999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 558,
+            "zone_id": 15829,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_magistersterrace.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/magisters-terrace.jpg",
+            "score": 487.2,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/32851134-20-magisters-terrace",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Windrunner Spire",
+            "short_name": "WS",
+            "mythic_level": 20,
+            "completed_at": "2026-06-24T18:37:13.000Z",
+            "clear_time_ms": 1940517,
+            "keystone_run_id": 37367916,
+            "par_time_ms": 1980999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 557,
+            "zone_id": 15808,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_windrunnerspire.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/windrunner-spire.jpg",
+            "score": 485.8,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/37367916-20-windrunner-spire",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Skyreach",
+            "short_name": "SR",
+            "mythic_level": 19,
+            "completed_at": "2026-05-18T16:47:44.000Z",
+            "clear_time_ms": 1648904,
+            "keystone_run_id": 27268533,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 161,
+            "zone_id": 6988,
+            "zone_expansion_id": 5,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_arakkoaspires.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion5/base/skyreach.jpg",
+            "score": 470.7,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/27268533-19-skyreach",
+            "spec": {
+              "id": 270,
+              "name": "Mistweaver",
+              "slug": "mistweaver",
+              "class_id": 10,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "5.0.0",
+              "ordinal": 1
+            },
+            "role": "healer"
+          }
+        ]
+      }
     },
     {
       "twitch": "PeptarTV",
