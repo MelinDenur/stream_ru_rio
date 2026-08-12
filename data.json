@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T12:12:13.620912Z",
+  "updated_at": "2026-08-12T13:58:28.724956Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -5261,11 +5261,11 @@
         "active_spec_role": "DPS",
         "gender": "female",
         "faction": "alliance",
-        "achievement_points": 17310,
+        "achievement_points": 17320,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/151/193857943-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-11T03:46:40.000Z",
+        "last_crawled_at": "2026-08-12T13:28:42.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Темканайк",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
