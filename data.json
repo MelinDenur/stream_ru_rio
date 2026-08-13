@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T21:23:34.603667Z",
+  "updated_at": "2026-08-13T22:19:31.022547Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -30,8 +30,8 @@
               "all": 3402.3,
               "dps": 3402.3,
               "healer": 0,
-              "tank": 1867,
-              "spec_0": 1867,
+              "tank": 2067.1,
+              "spec_0": 2067.1,
               "spec_1": 0,
               "spec_2": 3402.3,
               "spec_3": 0
@@ -50,12 +50,12 @@
                 "color": "#ffffff"
               },
               "tank": {
-                "score": 1867,
-                "color": "#7cff60"
+                "score": 2067.1,
+                "color": "#62ff47"
               },
               "spec_0": {
-                "score": 1867,
-                "color": "#7cff60"
+                "score": 2067.1,
+                "color": "#62ff47"
               },
               "spec_1": {
                 "score": 0,
