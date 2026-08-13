@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T03:09:30.336473Z",
+  "updated_at": "2026-08-13T05:18:30.273924Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -12,15 +12,15 @@
         "name": "Кхня",
         "race": "Zandalari Troll",
         "class": "Death Knight",
-        "active_spec_name": "Unholy",
-        "active_spec_role": "DPS",
+        "active_spec_name": "Blood",
+        "active_spec_role": "TANK",
         "gender": "male",
         "faction": "horde",
-        "achievement_points": 25855,
+        "achievement_points": 25965,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/227/165735395-avatar.jpg?alt=/wow/static/images/2d/avatar/31-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-10T18:53:56.000Z",
+        "last_crawled_at": "2026-08-13T04:41:48.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Кхня",
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
