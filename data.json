@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:35:17.710490Z",
+  "updated_at": "2026-08-14T21:29:32.078647Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -16,11 +16,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "horde",
-        "achievement_points": 25965,
+        "achievement_points": 26145,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/227/165735395-avatar.jpg?alt=/wow/static/images/2d/avatar/31-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-13T04:41:48.000Z",
+        "last_crawled_at": "2026-08-14T20:40:46.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Кхня",
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
@@ -30,8 +30,8 @@
               "all": 3402.3,
               "dps": 3402.3,
               "healer": 0,
-              "tank": 2067.1,
-              "spec_0": 2067.1,
+              "tank": 2402.1,
+              "spec_0": 2402.1,
               "spec_1": 0,
               "spec_2": 3402.3,
               "spec_3": 0
@@ -50,12 +50,12 @@
                 "color": "#ffffff"
               },
               "tank": {
-                "score": 2067.1,
-                "color": "#62ff47"
+                "score": 2402.1,
+                "color": "#39f533"
               },
               "spec_0": {
-                "score": 2067.1,
-                "color": "#62ff47"
+                "score": 2402.1,
+                "color": "#39f533"
               },
               "spec_1": {
                 "score": 0,
