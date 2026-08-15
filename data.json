@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T11:47:05.637531Z",
+  "updated_at": "2026-08-15T12:46:57.384084Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -5265,7 +5265,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/151/193857943-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-13T17:49:46.000Z",
+        "last_crawled_at": "2026-08-15T12:18:59.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Темканайк",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
