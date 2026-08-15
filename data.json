@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T07:34:36.164620Z",
+  "updated_at": "2026-08-15T08:34:44.356604Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -8408,11 +8408,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "alliance",
-        "achievement_points": 8540,
+        "achievement_points": 8685,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/tarren-mill/130/190748802-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
         "region": "eu",
         "realm": "Tarren Mill",
-        "last_crawled_at": "2026-08-12T01:06:40.000Z",
+        "last_crawled_at": "2026-08-15T08:06:47.000Z",
         "profile_url": "https://raider.io/characters/eu/tarren-mill/Nórthúr",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
@@ -12550,11 +12550,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "alliance",
-        "achievement_points": 25905,
+        "achievement_points": 26075,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/gordunni/155/266370459-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
         "region": "eu",
         "realm": "Gordunni",
-        "last_crawled_at": "2026-08-13T20:14:43.000Z",
+        "last_crawled_at": "2026-08-15T08:07:54.000Z",
         "profile_url": "https://raider.io/characters/eu/gordunni/Кхня",
         "profile_banner": "alliancebanner6",
         "mythic_plus_scores_by_season": [
