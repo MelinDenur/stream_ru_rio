@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T05:55:24.760735Z",
+  "updated_at": "2026-08-15T06:47:34.304316Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -9403,46 +9403,46 @@
         "active_spec_role": "HEALING",
         "gender": "female",
         "faction": "alliance",
-        "achievement_points": 12615,
+        "achievement_points": 12705,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/twisting-nether/243/196738035-avatar.jpg?alt=/wow/static/images/2d/avatar/30-1.jpg",
         "region": "eu",
         "realm": "Twisting Nether",
-        "last_crawled_at": "2026-08-11T18:34:54.000Z",
+        "last_crawled_at": "2026-08-15T06:17:01.000Z",
         "profile_url": "https://raider.io/characters/eu/twisting-nether/Murlgmrlgrlg",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
             "season": "season-mn-1",
             "scores": {
-              "all": 2962.7,
+              "all": 2995.1,
               "dps": 0,
-              "healer": 2962.7,
+              "healer": 2995.1,
               "tank": 0,
-              "spec_0": 2962.7,
+              "spec_0": 2995.1,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2962.7,
-                "color": "#4183c9"
+                "score": 2995.1,
+                "color": "#2f79d3"
               },
               "dps": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "healer": {
-                "score": 2962.7,
-                "color": "#4183c9"
+                "score": 2995.1,
+                "color": "#2f79d3"
               },
               "tank": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "spec_0": {
-                "score": 2962.7,
-                "color": "#4183c9"
+                "score": 2995.1,
+                "color": "#2f79d3"
               },
               "spec_1": {
                 "score": 0,
@@ -9785,6 +9785,60 @@
             "role": "healer"
           },
           {
+            "dungeon": "Maisara Caverns",
+            "short_name": "MC",
+            "mythic_level": 12,
+            "completed_at": "2026-08-11T23:44:37.000Z",
+            "clear_time_ms": 1723339,
+            "keystone_run_id": 43119336,
+            "par_time_ms": 1980999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 560,
+            "zone_id": 16395,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_maisarahills.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/maisara-caverns.jpg",
+            "score": 369.9,
+            "affixes": [
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-1/43119336-12-maisara-caverns",
+            "spec": {
+              "id": 65,
+              "name": "Holy",
+              "slug": "holy",
+              "class_id": 2,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 0
+            },
+            "role": "healer"
+          },
+          {
             "dungeon": "Pit of Saron",
             "short_name": "POS",
             "mythic_level": 12,
@@ -9826,60 +9880,6 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-1/42243197-12-pit-of-saron",
-            "spec": {
-              "id": 65,
-              "name": "Holy",
-              "slug": "holy",
-              "class_id": 2,
-              "role": "healer",
-              "is_melee": false,
-              "patch": "1.0.0",
-              "ordinal": 0
-            },
-            "role": "healer"
-          },
-          {
-            "dungeon": "Maisara Caverns",
-            "short_name": "MC",
-            "mythic_level": 11,
-            "completed_at": "2026-08-10T23:01:03.000Z",
-            "clear_time_ms": 1850324,
-            "keystone_run_id": 43003922,
-            "par_time_ms": 1980999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 560,
-            "zone_id": 16395,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_maisarahills.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/maisara-caverns.jpg",
-            "score": 337.5,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-1/43003922-11-maisara-caverns",
             "spec": {
               "id": 65,
               "name": "Holy",
