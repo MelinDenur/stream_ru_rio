@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T02:56:03.110295Z",
+  "updated_at": "2026-08-15T03:46:00.628949Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -10448,15 +10448,15 @@
         "name": "Murlg",
         "race": "Draenei",
         "class": "Shaman",
-        "active_spec_name": "Restoration",
-        "active_spec_role": "HEALING",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
         "gender": "female",
         "faction": "alliance",
-        "achievement_points": 12615,
+        "achievement_points": 12795,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/twisting-nether/8/196616968-avatar.jpg?alt=/wow/static/images/2d/avatar/11-1.jpg",
         "region": "eu",
         "realm": "Twisting Nether",
-        "last_crawled_at": "2026-08-10T12:51:39.000Z",
+        "last_crawled_at": "2026-08-15T03:19:48.000Z",
         "profile_url": "https://raider.io/characters/eu/twisting-nether/Murlg",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
