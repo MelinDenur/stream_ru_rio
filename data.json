@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T03:04:38.127174Z",
+  "updated_at": "2026-08-16T04:09:23.331249Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1065,11 +1065,11 @@
         "active_spec_role": "DPS",
         "gender": "female",
         "faction": "horde",
-        "achievement_points": 28560,
+        "achievement_points": 28605,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/20/195784724-avatar.jpg?alt=/wow/static/images/2d/avatar/91-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-13T20:15:00.000Z",
+        "last_crawled_at": "2026-08-16T03:28:05.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Риосвинка",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
