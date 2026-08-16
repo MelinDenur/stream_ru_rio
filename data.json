@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T15:49:15.008171Z",
+  "updated_at": "2026-08-16T16:30:59.610878Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -8408,11 +8408,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "alliance",
-        "achievement_points": 8685,
+        "achievement_points": 8720,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/tarren-mill/130/190748802-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
         "region": "eu",
         "realm": "Tarren Mill",
-        "last_crawled_at": "2026-08-15T08:06:47.000Z",
+        "last_crawled_at": "2026-08-16T16:29:49.000Z",
         "profile_url": "https://raider.io/characters/eu/tarren-mill/Nórthúr",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
