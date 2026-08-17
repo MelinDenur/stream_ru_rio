@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T17:31:34.202556Z",
+  "updated_at": "2026-08-17T18:46:19.225716Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -12550,11 +12550,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "alliance",
-        "achievement_points": 26075,
+        "achievement_points": 26080,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/gordunni/155/266370459-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
         "region": "eu",
         "realm": "Gordunni",
-        "last_crawled_at": "2026-08-15T08:07:54.000Z",
+        "last_crawled_at": "2026-08-17T18:03:51.000Z",
         "profile_url": "https://raider.io/characters/eu/gordunni/Кхня",
         "profile_banner": "alliancebanner6",
         "mythic_plus_scores_by_season": [
