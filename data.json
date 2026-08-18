@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T17:31:39.588059Z",
+  "updated_at": "2026-08-18T18:44:59.296659Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -2137,35 +2137,35 @@
             "segments": {
               "all": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "dps": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "healer": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "tank": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               }
             }
           }
@@ -3163,11 +3163,11 @@
         "active_spec_role": "TANK",
         "gender": "female",
         "faction": "alliance",
-        "achievement_points": 11380,
+        "achievement_points": 11390,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/silvermoon/189/219475901-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
         "region": "eu",
         "realm": "Silvermoon",
-        "last_crawled_at": "2026-08-13T20:14:52.000Z",
+        "last_crawled_at": "2026-08-18T18:24:56.000Z",
         "profile_url": "https://raider.io/characters/eu/silvermoon/Shotta",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
@@ -4235,35 +4235,35 @@
             "segments": {
               "all": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "dps": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "healer": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "tank": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               }
             }
           }
@@ -6333,35 +6333,35 @@
             "segments": {
               "all": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "dps": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "healer": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "tank": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               }
             }
           }
@@ -9426,35 +9426,35 @@
             "segments": {
               "all": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "dps": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "healer": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "tank": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               }
             }
           }
@@ -12573,35 +12573,35 @@
             "segments": {
               "all": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "dps": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "healer": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "tank": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ff8000"
+                "color": "#ffffff"
               }
             }
           }
