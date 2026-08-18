@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T14:38:11.620680Z",
+  "updated_at": "2026-08-18T15:36:27.859375Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -25,49 +25,49 @@
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3402.3,
-              "dps": 3402.3,
+              "all": 0,
+              "dps": 0,
               "healer": 0,
-              "tank": 2402.1,
-              "spec_0": 2402.1,
+              "tank": 0,
+              "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 3402.3,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3402.3,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 3402.3,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
-                "score": 2402.1,
-                "color": "#39f533"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_0": {
-                "score": 2402.1,
-                "color": "#39f533"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 3402.3,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -1074,49 +1074,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3894.1,
-              "dps": 1315,
-              "healer": 3894.1,
+              "all": 0,
+              "dps": 0,
+              "healer": 0,
               "tank": 0,
               "spec_0": 0,
-              "spec_1": 3894.1,
-              "spec_2": 1315,
+              "spec_1": 0,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3894.1,
-                "color": "#e3598b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 1315,
-                "color": "#b1ff98"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
-                "score": 3894.1,
-                "color": "#e3598b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
-                "score": 3894.1,
-                "color": "#e3598b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 1315,
-                "color": "#b1ff98"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -2123,49 +2123,49 @@
         "profile_banner": "hordebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3755.1,
+              "all": 0,
               "dps": 0,
-              "healer": 3755.1,
+              "healer": 0,
               "tank": 0,
               "spec_0": 0,
-              "spec_1": 3755.1,
+              "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3755.1,
-                "color": "#d44daa"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
-                "score": 3755.1,
-                "color": "#d44daa"
+                "score": 0,
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
-                "score": 3755.1,
-                "color": "#d44daa"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -3172,49 +3172,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3587,
+              "all": 0,
               "dps": 0,
               "healer": 0,
-              "tank": 3587,
-              "spec_0": 3587,
+              "tank": 0,
+              "spec_0": 0,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3587,
-                "color": "#be3fce"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
-                "score": 3587,
-                "color": "#be3fce"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_0": {
-                "score": 3587,
-                "color": "#be3fce"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -4221,49 +4221,49 @@
         "profile_banner": "hordebanner13",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 4192.2,
+              "all": 0,
               "dps": 0,
               "healer": 0,
-              "tank": 4192.2,
+              "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 4192.2,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 4192.2,
-                "color": "#f87441"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
-                "score": 4192.2,
-                "color": "#f87441"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 4192.2,
-                "color": "#f87441"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -5270,49 +5270,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 4251.6,
-              "dps": 4251.6,
+              "all": 0,
+              "dps": 0,
               "healer": 0,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 4251.6,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 4251.6,
-                "color": "#fb7833"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 4251.6,
-                "color": "#fb7833"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 4251.6,
-                "color": "#fb7833"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -6319,49 +6319,49 @@
         "profile_banner": "classbanner_hunter1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3953.9,
-              "dps": 3953.9,
+              "all": 0,
+              "dps": 0,
               "healer": 0,
               "tank": 0,
               "spec_0": 0,
-              "spec_1": 3953.9,
-              "spec_2": 3083.6,
+              "spec_1": 0,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3953.9,
-                "color": "#e95f7b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 3953.9,
-                "color": "#e95f7b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
-                "score": 3953.9,
-                "color": "#e95f7b"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 3083.6,
-                "color": "#0070dd"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -7368,49 +7368,49 @@
         "profile_banner": "hordebanner2",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 4060.3,
-              "dps": 4060.3,
+              "all": 0,
+              "dps": 0,
               "healer": 0,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 4060.3,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 4060.3,
-                "color": "#ef6765"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 4060.3,
-                "color": "#ef6765"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 4060.3,
-                "color": "#ef6765"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -8417,49 +8417,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 2608.6,
+              "all": 0,
               "dps": 0,
               "healer": 0,
-              "tank": 2608.6,
-              "spec_0": 2608.6,
+              "tank": 0,
+              "spec_0": 0,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2608.6,
-                "color": "#5ccc77"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
-                "score": 2608.6,
-                "color": "#5ccc77"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_0": {
-                "score": 2608.6,
-                "color": "#5ccc77"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -9412,49 +9412,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 2995.1,
+              "all": 0,
               "dps": 0,
-              "healer": 2995.1,
+              "healer": 0,
               "tank": 0,
-              "spec_0": 2995.1,
+              "spec_0": 0,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2995.1,
-                "color": "#2f79d3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
-                "score": 2995.1,
-                "color": "#2f79d3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
-                "score": 2995.1,
-                "color": "#2f79d3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -10461,49 +10461,49 @@
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3419.6,
+              "all": 0,
               "dps": 0,
-              "healer": 3419.6,
+              "healer": 0,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 3419.6,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3419.6,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
-                "score": 3419.6,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 3419.6,
-                "color": "#9d3ded"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -11510,49 +11510,49 @@
         "profile_banner": "hordebanner1",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 3215.3,
+              "all": 0,
               "dps": 0,
-              "healer": 3215.3,
+              "healer": 0,
               "tank": 0,
-              "spec_0": 3215.3,
+              "spec_0": 0,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 3215.3,
-                "color": "#5f62e3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "healer": {
-                "score": 3215.3,
-                "color": "#5f62e3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "tank": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_0": {
-                "score": 3215.3,
-                "color": "#5f62e3"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_1": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_2": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
@@ -12559,49 +12559,49 @@
         "profile_banner": "alliancebanner6",
         "mythic_plus_scores_by_season": [
           {
-            "season": "season-mn-1",
+            "season": "season-mn-2",
             "scores": {
-              "all": 2921.1,
-              "dps": 1723.4,
+              "all": 0,
+              "dps": 0,
               "healer": 0,
-              "tank": 2518.4,
+              "tank": 0,
               "spec_0": 0,
-              "spec_1": 2518.4,
-              "spec_2": 1723.4,
+              "spec_1": 0,
+              "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2921.1,
-                "color": "#4c8cbf"
+                "score": 0,
+                "color": "#ff8000"
               },
               "dps": {
-                "score": 1723.4,
-                "color": "#8cff70"
+                "score": 0,
+                "color": "#ff8000"
               },
               "healer": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "tank": {
-                "score": 2518.4,
-                "color": "#55db63"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_0": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               },
               "spec_1": {
-                "score": 2518.4,
-                "color": "#55db63"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_2": {
-                "score": 1723.4,
-                "color": "#8cff70"
+                "score": 0,
+                "color": "#ff8000"
               },
               "spec_3": {
                 "score": 0,
-                "color": "#ffffff"
+                "color": "#ff8000"
               }
             }
           }
