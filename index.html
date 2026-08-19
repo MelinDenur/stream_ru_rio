@@ -524,7 +524,7 @@ function renderRows(streamers){
 
 // --- Сортировка по столбцам ---
 let currentStreamers = [];
-let sortState = { key: null, dir: 1 };
+let sortState = { key: "score", dir: -1 };
 
 function getSortValue(s, key){
   const disp = computeDisplay(s);
