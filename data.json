@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T23:27:04.652897Z",
+  "updated_at": "2026-08-19T23:50:45.180842Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -5212,8 +5212,74 @@
       "realm": "Twisting Nether",
       "realm_ru": "Twisting Nether",
       "char": "Murlg",
-      "status": "error",
-      "error": "The read operation timed out"
+      "status": "ok",
+      "data": {
+        "name": "Murlg",
+        "race": "Draenei",
+        "class": "Shaman",
+        "active_spec_name": "Restoration",
+        "active_spec_role": "HEALING",
+        "gender": "female",
+        "faction": "alliance",
+        "achievement_points": 12985,
+        "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/twisting-nether/8/196616968-avatar.jpg?alt=/wow/static/images/2d/avatar/11-1.jpg",
+        "region": "eu",
+        "realm": "Twisting Nether",
+        "last_crawled_at": "2026-08-18T05:08:03.000Z",
+        "profile_url": "https://raider.io/characters/eu/twisting-nether/Murlg",
+        "profile_banner": "alliancebanner1",
+        "mythic_plus_scores_by_season": [
+          {
+            "season": "season-mn-2",
+            "scores": {
+              "all": 0,
+              "dps": 0,
+              "healer": 0,
+              "tank": 0,
+              "spec_0": 0,
+              "spec_1": 0,
+              "spec_2": 0,
+              "spec_3": 0
+            },
+            "segments": {
+              "all": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "dps": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "healer": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "tank": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_0": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_1": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_2": {
+                "score": 0,
+                "color": "#ffffff"
+              },
+              "spec_3": {
+                "score": 0,
+                "color": "#ffffff"
+              }
+            }
+          }
+        ],
+        "mythic_plus_best_runs": [],
+        "mythic_plus_highest_level_runs": []
+      }
     },
     {
       "twitch": "PeptarTV",
