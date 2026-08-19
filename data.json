@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T23:49:54.879557Z",
+  "updated_at": "2026-08-19T01:36:01.746781Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -4212,11 +4212,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "horde",
-        "achievement_points": 16065,
+        "achievement_points": 16125,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/199/163149255-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-15T01:58:52.000Z",
+        "last_crawled_at": "2026-08-19T00:35:54.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Взбучкаю",
         "profile_banner": "hordebanner13",
         "mythic_plus_scores_by_season": [
@@ -8408,11 +8408,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "alliance",
-        "achievement_points": 8720,
+        "achievement_points": 9000,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/tarren-mill/130/190748802-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
         "region": "eu",
         "realm": "Tarren Mill",
-        "last_crawled_at": "2026-08-16T16:29:49.000Z",
+        "last_crawled_at": "2026-08-19T00:06:59.000Z",
         "profile_url": "https://raider.io/characters/eu/tarren-mill/Nórthúr",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
