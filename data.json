@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T20:33:32.868482Z",
+  "updated_at": "2026-08-19T21:29:39.867527Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1072,27 +1072,27 @@
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 1449.9,
+              "all": 1745.8,
               "dps": 0,
-              "healer": 1449.9,
+              "healer": 1745.8,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 1449.9,
+              "spec_2": 1745.8,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 1449.9,
-                "color": "#1e74d9"
+                "score": 1745.8,
+                "color": "#6d5de5"
               },
               "dps": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "healer": {
-                "score": 1449.9,
-                "color": "#1e74d9"
+                "score": 1745.8,
+                "color": "#6d5de5"
               },
               "tank": {
                 "score": 0,
@@ -1107,8 +1107,8 @@
                 "color": "#ffffff"
               },
               "spec_2": {
-                "score": 1449.9,
-                "color": "#1e74d9"
+                "score": 1745.8,
+                "color": "#6d5de5"
               },
               "spec_3": {
                 "score": 0,
@@ -1214,6 +1214,52 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/311268-10-temple-of-sethraliss",
+            "spec": {
+              "id": 264,
+              "name": "Restoration",
+              "slug": "restoration",
+              "class_id": 7,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Den of Nalorakk",
+            "short_name": "DON",
+            "mythic_level": 9,
+            "completed_at": "2026-08-19T16:26:29.000Z",
+            "clear_time_ms": 1616872,
+            "keystone_run_id": 362089,
+            "par_time_ms": 1920999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 586,
+            "zone_id": 16368,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_proveyourworth.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/den-of-nalorakk.jpg",
+            "score": 295.9,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/362089-9-den-of-nalorakk",
             "spec": {
               "id": 264,
               "name": "Restoration",
@@ -1458,6 +1504,52 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/311268-10-temple-of-sethraliss",
+            "spec": {
+              "id": 264,
+              "name": "Restoration",
+              "slug": "restoration",
+              "class_id": 7,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Den of Nalorakk",
+            "short_name": "DON",
+            "mythic_level": 9,
+            "completed_at": "2026-08-19T16:26:29.000Z",
+            "clear_time_ms": 1616872,
+            "keystone_run_id": 362089,
+            "par_time_ms": 1920999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 586,
+            "zone_id": 16368,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_proveyourworth.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/den-of-nalorakk.jpg",
+            "score": 295.9,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/362089-9-den-of-nalorakk",
             "spec": {
               "id": 264,
               "name": "Restoration",
@@ -3743,38 +3835,38 @@
         "name": "Мидсу",
         "race": "Orc",
         "class": "Hunter",
-        "active_spec_name": "Marksmanship",
+        "active_spec_name": "Survival",
         "active_spec_role": "DPS",
         "gender": "female",
         "faction": "horde",
-        "achievement_points": 6905,
+        "achievement_points": 6915,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/177/195424945-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-19T13:45:04.000Z",
+        "last_crawled_at": "2026-08-19T20:39:59.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Мидсу",
         "profile_banner": "classbanner_hunter1",
         "mythic_plus_scores_by_season": [
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 2334,
-              "dps": 2334,
+              "all": 2675.8,
+              "dps": 2675.8,
               "healer": 0,
               "tank": 0,
               "spec_0": 0,
-              "spec_1": 2334,
+              "spec_1": 2675.8,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2334,
-                "color": "#cb47bb"
+                "score": 2675.8,
+                "color": "#f06765"
               },
               "dps": {
-                "score": 2334,
-                "color": "#cb47bb"
+                "score": 2675.8,
+                "color": "#f06765"
               },
               "healer": {
                 "score": 0,
@@ -3789,8 +3881,8 @@
                 "color": "#ffffff"
               },
               "spec_1": {
-                "score": 2334,
-                "color": "#cb47bb"
+                "score": 2675.8,
+                "color": "#f06765"
               },
               "spec_2": {
                 "score": 0,
@@ -3846,6 +3938,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/341485-11-the-blinding-vale",
+            "spec": {
+              "id": 254,
+              "name": "Marksmanship",
+              "slug": "marksmanship",
+              "class_id": 3,
+              "role": "dps",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 1
+            },
+            "role": "dps"
+          },
+          {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 11,
+            "completed_at": "2026-08-19T15:24:46.000Z",
+            "clear_time_ms": 1474338,
+            "keystone_run_id": 358217,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 341.8,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/358217-11-voidscar-arena",
             "spec": {
               "id": 254,
               "name": "Marksmanship",
@@ -4347,6 +4493,60 @@
             "role": "dps"
           },
           {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 11,
+            "completed_at": "2026-08-19T15:24:46.000Z",
+            "clear_time_ms": 1474338,
+            "keystone_run_id": 358217,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 341.8,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/358217-11-voidscar-arena",
+            "spec": {
+              "id": 254,
+              "name": "Marksmanship",
+              "slug": "marksmanship",
+              "class_id": 3,
+              "role": "dps",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 1
+            },
+            "role": "dps"
+          },
+          {
             "dungeon": "Temple of Sethraliss",
             "short_name": "TOS",
             "mythic_level": 11,
@@ -4658,60 +4858,6 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/341495-10-murder-row",
-            "spec": {
-              "id": 254,
-              "name": "Marksmanship",
-              "slug": "marksmanship",
-              "class_id": 3,
-              "role": "dps",
-              "is_melee": false,
-              "patch": "1.0.0",
-              "ordinal": 1
-            },
-            "role": "dps"
-          },
-          {
-            "dungeon": "Ruby Life Pools",
-            "short_name": "RLP",
-            "mythic_level": 10,
-            "completed_at": "2026-08-19T12:15:11.000Z",
-            "clear_time_ms": 1502813,
-            "keystone_run_id": 341503,
-            "par_time_ms": 1680999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 399,
-            "zone_id": 14063,
-            "zone_expansion_id": 9,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
-            "score": 324,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/341503-10-ruby-life-pools",
             "spec": {
               "id": 254,
               "name": "Marksmanship",
