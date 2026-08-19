@@ -324,6 +324,16 @@
   }
   footer a:hover{ text-decoration: underline; }
 
+  .visitor-badge{
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    opacity: 0.85;
+  }
+  .visitor-badge img{ display:block; }
+
   @media (prefers-reduced-motion: reduce){ button{ transition:none; } }
 </style>
 </head>
@@ -403,6 +413,11 @@
     <br><br>
     Таблица обновляется автоматически несколько раз в день, так что после добавления новый стример
     появится здесь без ручных действий с твоей стороны.
+
+    <div class="visitor-badge">
+      <img src="https://api.visitorbadge.io/api/visitors?user=melindenur&repo=stream_ru_rio&labelColor=%2312121a&countColor=%23d4af6a&label=%D0%9F%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B9&style=flat"
+           alt="Счётчик посещений страницы" loading="lazy">
+    </div>
   </footer>
 
 </div>
