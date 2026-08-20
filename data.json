@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T16:40:06.949641Z",
+  "updated_at": "2026-08-20T17:34:15.855478Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -39,7 +39,7 @@
             "segments": {
               "all": {
                 "score": 2608.7,
-                "color": "#ba3dd4"
+                "color": "#b53bda"
               },
               "dps": {
                 "score": 0,
@@ -51,11 +51,11 @@
               },
               "tank": {
                 "score": 2608.7,
-                "color": "#ba3dd4"
+                "color": "#b53bda"
               },
               "spec_0": {
                 "score": 2608.7,
-                "color": "#ba3dd4"
+                "color": "#b53bda"
               },
               "spec_1": {
                 "score": 0,
@@ -1163,7 +1163,7 @@
             "segments": {
               "all": {
                 "score": 2674.4,
-                "color": "#c744c1"
+                "color": "#c442c6"
               },
               "dps": {
                 "score": 0,
@@ -1171,7 +1171,7 @@
               },
               "healer": {
                 "score": 2674.4,
-                "color": "#c744c1"
+                "color": "#c442c6"
               },
               "tank": {
                 "score": 0,
@@ -1187,7 +1187,7 @@
               },
               "spec_2": {
                 "score": 2674.4,
-                "color": "#c744c1"
+                "color": "#c442c6"
               },
               "spec_3": {
                 "score": 0,
@@ -2287,7 +2287,7 @@
             "segments": {
               "all": {
                 "score": 2794.4,
-                "color": "#d950a1"
+                "color": "#d74fa5"
               },
               "dps": {
                 "score": 0,
@@ -2299,11 +2299,11 @@
               },
               "tank": {
                 "score": 2794.4,
-                "color": "#d950a1"
+                "color": "#d74fa5"
               },
               "spec_0": {
                 "score": 2794.4,
-                "color": "#d950a1"
+                "color": "#d74fa5"
               },
               "spec_1": {
                 "score": 0,
@@ -3328,7 +3328,7 @@
             "segments": {
               "all": {
                 "score": 1899.4,
-                "color": "#1873da"
+                "color": "#1773da"
               },
               "dps": {
                 "score": 0,
@@ -3340,7 +3340,7 @@
               },
               "tank": {
                 "score": 1899.4,
-                "color": "#1873da"
+                "color": "#1773da"
               },
               "spec_0": {
                 "score": 0,
@@ -3352,7 +3352,7 @@
               },
               "spec_2": {
                 "score": 1899.4,
-                "color": "#1873da"
+                "color": "#1773da"
               },
               "spec_3": {
                 "score": 0,
@@ -3997,6 +3997,44 @@
             "role": "tank"
           },
           {
+            "dungeon": "Altar of Fangs",
+            "short_name": "AOF",
+            "mythic_level": 5,
+            "completed_at": "2026-08-20T07:45:31.000Z",
+            "clear_time_ms": 970131,
+            "keystone_run_id": 703491,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 3,
+            "map_challenge_mode_id": 588,
+            "zone_id": 16865,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_altaroffangs.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/altar-of-fangs.jpg",
+            "score": 230,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/703491-5-altar-of-fangs",
+            "spec": {
+              "id": 104,
+              "name": "Guardian",
+              "slug": "guardian",
+              "class_id": 11,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "tank"
+          },
+          {
             "dungeon": "Voidscar Arena",
             "short_name": "VSA",
             "mythic_level": 2,
@@ -4047,29 +4085,29 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/151/193857943-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-20T11:58:19.000Z",
+        "last_crawled_at": "2026-08-20T16:56:04.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Темканайк",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 2707.5,
-              "dps": 2707.5,
+              "all": 2711.1,
+              "dps": 2711.1,
               "healer": 0,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 2707.5,
+              "spec_2": 2711.1,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2707.5,
+                "score": 2711.1,
                 "color": "#cb47ba"
               },
               "dps": {
-                "score": 2707.5,
+                "score": 2711.1,
                 "color": "#cb47ba"
               },
               "healer": {
@@ -4089,7 +4127,7 @@
                 "color": "#ffffff"
               },
               "spec_2": {
-                "score": 2707.5,
+                "score": 2711.1,
                 "color": "#cb47ba"
               },
               "spec_3": {
@@ -4428,17 +4466,17 @@
             "dungeon": "The Blinding Vale",
             "short_name": "BV",
             "mythic_level": 10,
-            "completed_at": "2026-08-19T11:52:24.000Z",
-            "clear_time_ms": 1474120,
-            "keystone_run_id": 246349,
+            "completed_at": "2026-08-20T16:07:25.000Z",
+            "clear_time_ms": 1302203,
+            "keystone_run_id": 712894,
             "par_time_ms": 1800999,
-            "num_keystone_upgrades": 1,
+            "num_keystone_upgrades": 2,
             "map_challenge_mode_id": 584,
             "zone_id": 16359,
             "zone_expansion_id": 11,
             "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_lightbloom.jpg",
             "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/the-blinding-vale.jpg",
-            "score": 326.8,
+            "score": 330.4,
             "affixes": [
               {
                 "id": 162,
@@ -4465,7 +4503,7 @@
                 "wowhead_url": "https://wowhead.com/affix=9"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/246349-10-the-blinding-vale",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/712894-10-the-blinding-vale",
             "spec": {
               "id": 269,
               "name": "Windwalker",
@@ -4967,6 +5005,60 @@
             "role": "dps"
           },
           {
+            "dungeon": "The Blinding Vale",
+            "short_name": "BV",
+            "mythic_level": 10,
+            "completed_at": "2026-08-20T16:07:25.000Z",
+            "clear_time_ms": 1302203,
+            "keystone_run_id": 712894,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 2,
+            "map_challenge_mode_id": 584,
+            "zone_id": 16359,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_lightbloom.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/the-blinding-vale.jpg",
+            "score": 330.4,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/712894-10-the-blinding-vale",
+            "spec": {
+              "id": 269,
+              "name": "Windwalker",
+              "slug": "windwalker",
+              "class_id": 10,
+              "role": "dps",
+              "is_melee": true,
+              "patch": "5.0.0",
+              "ordinal": 2
+            },
+            "role": "dps"
+          },
+          {
             "dungeon": "Temple of Sethraliss",
             "short_name": "TOS",
             "mythic_level": 10,
@@ -5008,60 +5100,6 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/148756-10-temple-of-sethraliss",
-            "spec": {
-              "id": 269,
-              "name": "Windwalker",
-              "slug": "windwalker",
-              "class_id": 10,
-              "role": "dps",
-              "is_melee": true,
-              "patch": "5.0.0",
-              "ordinal": 2
-            },
-            "role": "dps"
-          },
-          {
-            "dungeon": "Altar of Fangs",
-            "short_name": "AOF",
-            "mythic_level": 10,
-            "completed_at": "2026-08-20T08:33:05.000Z",
-            "clear_time_ms": 1370511,
-            "keystone_run_id": 583567,
-            "par_time_ms": 1800999,
-            "num_keystone_upgrades": 2,
-            "map_challenge_mode_id": 588,
-            "zone_id": 16865,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_altaroffangs.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/altar-of-fangs.jpg",
-            "score": 329,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/583567-10-altar-of-fangs",
             "spec": {
               "id": 269,
               "name": "Windwalker",
@@ -6164,11 +6202,11 @@
             "segments": {
               "all": {
                 "score": 1558,
-                "color": "#5698b2"
+                "color": "#579ab0"
               },
               "dps": {
                 "score": 1558,
-                "color": "#5698b2"
+                "color": "#579ab0"
               },
               "healer": {
                 "score": 0,
@@ -6180,7 +6218,7 @@
               },
               "spec_0": {
                 "score": 1558,
-                "color": "#5698b2"
+                "color": "#579ab0"
               },
               "spec_1": {
                 "score": 0,
@@ -7070,35 +7108,35 @@
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 2059.1,
+              "all": 2401.2,
               "dps": 0,
-              "healer": 2059.1,
+              "healer": 2401.2,
               "tank": 0,
-              "spec_0": 2059.1,
+              "spec_0": 2401.2,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2059.1,
-                "color": "#4a68e1"
+                "score": 2401.2,
+                "color": "#9346eb"
               },
               "dps": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "healer": {
-                "score": 2059.1,
-                "color": "#4a68e1"
+                "score": 2401.2,
+                "color": "#9346eb"
               },
               "tank": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "spec_0": {
-                "score": 2059.1,
-                "color": "#4a68e1"
+                "score": 2401.2,
+                "color": "#9346eb"
               },
               "spec_1": {
                 "score": 0,
@@ -7158,6 +7196,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/682654-11-den-of-nalorakk",
+            "spec": {
+              "id": 65,
+              "name": "Holy",
+              "slug": "holy",
+              "class_id": 2,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 0
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 11,
+            "completed_at": "2026-08-20T15:52:19.000Z",
+            "clear_time_ms": 1461349,
+            "keystone_run_id": 697102,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 342.1,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/697102-11-voidscar-arena",
             "spec": {
               "id": 65,
               "name": "Holy",
@@ -7506,6 +7598,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/295779-12-murder-row",
+            "spec": {
+              "id": 65,
+              "name": "Holy",
+              "slug": "holy",
+              "class_id": 2,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 0
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 11,
+            "completed_at": "2026-08-20T15:52:19.000Z",
+            "clear_time_ms": 1461349,
+            "keystone_run_id": 697102,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 342.1,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/697102-11-voidscar-arena",
             "spec": {
               "id": 65,
               "name": "Holy",
@@ -7914,52 +8060,6 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/429609-8-the-blinding-vale",
-            "spec": {
-              "id": 65,
-              "name": "Holy",
-              "slug": "holy",
-              "class_id": 2,
-              "role": "healer",
-              "is_melee": false,
-              "patch": "1.0.0",
-              "ordinal": 0
-            },
-            "role": "healer"
-          },
-          {
-            "dungeon": "Altar of Fangs",
-            "short_name": "AOF",
-            "mythic_level": 7,
-            "completed_at": "2026-08-19T10:44:52.000Z",
-            "clear_time_ms": 1624782,
-            "keystone_run_id": 234316,
-            "par_time_ms": 1800999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 588,
-            "zone_id": 16865,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_altaroffangs.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/altar-of-fangs.jpg",
-            "score": 263.7,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/234316-7-altar-of-fangs",
             "spec": {
               "id": 65,
               "name": "Holy",
