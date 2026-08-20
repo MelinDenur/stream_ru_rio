@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T06:59:20.618182Z",
+  "updated_at": "2026-08-20T07:51:00.367083Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -4249,15 +4249,15 @@
         "name": "Мидсу",
         "race": "Orc",
         "class": "Hunter",
-        "active_spec_name": "Survival",
+        "active_spec_name": "Marksmanship",
         "active_spec_role": "DPS",
         "gender": "female",
         "faction": "horde",
-        "achievement_points": 6915,
+        "achievement_points": 6955,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/177/195424945-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-19T20:39:59.000Z",
+        "last_crawled_at": "2026-08-20T07:01:34.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Мидсу",
         "profile_banner": "classbanner_hunter1",
         "mythic_plus_scores_by_season": [
