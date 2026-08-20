@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T21:32:32.852703Z",
+  "updated_at": "2026-08-20T22:32:53.086361Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1136,42 +1136,42 @@
         "name": "Пельменева",
         "race": "Vulpera",
         "class": "Shaman",
-        "active_spec_name": "Restoration",
-        "active_spec_role": "HEALING",
+        "active_spec_name": "Elemental",
+        "active_spec_role": "DPS",
         "gender": "female",
         "faction": "horde",
-        "achievement_points": 28660,
+        "achievement_points": 28700,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/51/196865843-avatar.jpg?alt=/wow/static/images/2d/avatar/35-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-20T16:08:03.000Z",
+        "last_crawled_at": "2026-08-20T22:02:33.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Пельменева",
         "profile_banner": "hordebanner1",
         "mythic_plus_scores_by_season": [
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 2674.4,
+              "all": 2700.8,
               "dps": 0,
-              "healer": 2674.4,
+              "healer": 2700.8,
               "tank": 0,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 2674.4,
+              "spec_2": 2700.8,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2674.4,
-                "color": "#c040cb"
+                "score": 2700.8,
+                "color": "#c543c5"
               },
               "dps": {
                 "score": 0,
                 "color": "#ffffff"
               },
               "healer": {
-                "score": 2674.4,
-                "color": "#c040cb"
+                "score": 2700.8,
+                "color": "#c543c5"
               },
               "tank": {
                 "score": 0,
@@ -1186,8 +1186,8 @@
                 "color": "#ffffff"
               },
               "spec_2": {
-                "score": 2674.4,
-                "color": "#c040cb"
+                "score": 2700.8,
+                "color": "#c543c5"
               },
               "spec_3": {
                 "score": 0,
@@ -1254,10 +1254,10 @@
           {
             "dungeon": "Ruby Life Pools",
             "short_name": "RLP",
-            "mythic_level": 11,
-            "completed_at": "2026-08-19T18:08:14.000Z",
-            "clear_time_ms": 1488684,
-            "keystone_run_id": 457011,
+            "mythic_level": 12,
+            "completed_at": "2026-08-20T17:59:22.000Z",
+            "clear_time_ms": 1650923,
+            "keystone_run_id": 798132,
             "par_time_ms": 1680999,
             "num_keystone_upgrades": 1,
             "map_challenge_mode_id": 399,
@@ -1265,16 +1265,8 @@
             "zone_expansion_id": 9,
             "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
             "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
-            "score": 339.3,
+            "score": 365.7,
             "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
               {
                 "id": 10,
                 "name": "Fortified",
@@ -1290,9 +1282,17 @@
                 "icon": "achievement_boss_archaedas",
                 "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
                 "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/457011-11-ruby-life-pools",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/798132-12-ruby-life-pools",
             "spec": {
               "id": 264,
               "name": "Restoration",
@@ -1632,6 +1632,60 @@
         ],
         "mythic_plus_highest_level_runs": [
           {
+            "dungeon": "Ruby Life Pools",
+            "short_name": "RLP",
+            "mythic_level": 12,
+            "completed_at": "2026-08-20T17:59:22.000Z",
+            "clear_time_ms": 1650923,
+            "keystone_run_id": 798132,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 399,
+            "zone_id": 14063,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
+            "score": 365.7,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/798132-12-ruby-life-pools",
+            "spec": {
+              "id": 264,
+              "name": "Restoration",
+              "slug": "restoration",
+              "class_id": 7,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "healer"
+          },
+          {
             "dungeon": "Temple of Sethraliss",
             "short_name": "TOS",
             "mythic_level": 12,
@@ -1727,6 +1781,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/457011-11-ruby-life-pools",
+            "spec": {
+              "id": 264,
+              "name": "Restoration",
+              "slug": "restoration",
+              "class_id": 7,
+              "role": "healer",
+              "is_melee": false,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "healer"
+          },
+          {
+            "dungeon": "Temple of Sethraliss",
+            "short_name": "TOS",
+            "mythic_level": 11,
+            "completed_at": "2026-08-20T14:10:23.000Z",
+            "clear_time_ms": 1594376,
+            "keystone_run_id": 797077,
+            "par_time_ms": 1920999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 250,
+            "zone_id": 9527,
+            "zone_expansion_id": 7,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_templeofsethraliss.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion7/base/temple-of-sethraliss.jpg",
+            "score": 341.4,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/797077-11-temple-of-sethraliss",
             "spec": {
               "id": 264,
               "name": "Restoration",
@@ -2062,114 +2170,6 @@
               "ordinal": 2
             },
             "role": "healer"
-          },
-          {
-            "dungeon": "The Blinding Vale",
-            "short_name": "BV",
-            "mythic_level": 10,
-            "completed_at": "2026-08-20T12:49:34.000Z",
-            "clear_time_ms": 1436278,
-            "keystone_run_id": 682000,
-            "par_time_ms": 1800999,
-            "num_keystone_upgrades": 2,
-            "map_challenge_mode_id": 584,
-            "zone_id": 16359,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_lightbloom.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/the-blinding-vale.jpg",
-            "score": 327.6,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/682000-10-the-blinding-vale",
-            "spec": {
-              "id": 264,
-              "name": "Restoration",
-              "slug": "restoration",
-              "class_id": 7,
-              "role": "healer",
-              "is_melee": false,
-              "patch": "1.0.0",
-              "ordinal": 2
-            },
-            "role": "healer"
-          },
-          {
-            "dungeon": "Voidscar Arena",
-            "short_name": "VSA",
-            "mythic_level": 10,
-            "completed_at": "2026-08-19T19:20:19.000Z",
-            "clear_time_ms": 1493669,
-            "keystone_run_id": 462118,
-            "par_time_ms": 1800999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 585,
-            "zone_id": 16425,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
-            "score": 326.4,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/462118-10-voidscar-arena",
-            "spec": {
-              "id": 264,
-              "name": "Restoration",
-              "slug": "restoration",
-              "class_id": 7,
-              "role": "healer",
-              "is_melee": false,
-              "patch": "1.0.0",
-              "ordinal": 2
-            },
-            "role": "healer"
           }
         ]
       }
@@ -2275,19 +2275,19 @@
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 2941.6,
+              "all": 2987.2,
               "dps": 0,
               "healer": 0,
-              "tank": 2941.6,
-              "spec_0": 2941.6,
+              "tank": 2987.2,
+              "spec_0": 2987.2,
               "spec_1": 0,
               "spec_2": 0,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 2941.6,
-                "color": "#e75d80"
+                "score": 2987.2,
+                "color": "#eb6272"
               },
               "dps": {
                 "score": 0,
@@ -2298,12 +2298,12 @@
                 "color": "#ffffff"
               },
               "tank": {
-                "score": 2941.6,
-                "color": "#e75d80"
+                "score": 2987.2,
+                "color": "#eb6272"
               },
               "spec_0": {
-                "score": 2941.6,
-                "color": "#e75d80"
+                "score": 2987.2,
+                "color": "#eb6272"
               },
               "spec_1": {
                 "score": 0,
@@ -2417,6 +2417,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/732299-13-den-of-nalorakk",
+            "spec": {
+              "id": 250,
+              "name": "Blood",
+              "slug": "blood",
+              "class_id": 6,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "3.0.0",
+              "ordinal": 0
+            },
+            "role": "tank"
+          },
+          {
+            "dungeon": "Ruby Life Pools",
+            "short_name": "RLP",
+            "mythic_level": 12,
+            "completed_at": "2026-08-20T21:17:19.000Z",
+            "clear_time_ms": 1361589,
+            "keystone_run_id": 792836,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 399,
+            "zone_id": 14063,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
+            "score": 372.1,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/792836-12-ruby-life-pools",
             "spec": {
               "id": 250,
               "name": "Blood",
@@ -2698,60 +2752,6 @@
               "ordinal": 0
             },
             "role": "tank"
-          },
-          {
-            "dungeon": "Ruby Life Pools",
-            "short_name": "RLP",
-            "mythic_level": 10,
-            "completed_at": "2026-08-19T18:33:02.000Z",
-            "clear_time_ms": 1390969,
-            "keystone_run_id": 333661,
-            "par_time_ms": 1680999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 399,
-            "zone_id": 14063,
-            "zone_expansion_id": 9,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
-            "score": 326.5,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/333661-10-ruby-life-pools",
-            "spec": {
-              "id": 250,
-              "name": "Blood",
-              "slug": "blood",
-              "class_id": 6,
-              "role": "tank",
-              "is_melee": true,
-              "patch": "3.0.0",
-              "ordinal": 0
-            },
-            "role": "tank"
           }
         ],
         "mythic_plus_highest_level_runs": [
@@ -2851,6 +2851,60 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/732299-13-den-of-nalorakk",
+            "spec": {
+              "id": 250,
+              "name": "Blood",
+              "slug": "blood",
+              "class_id": 6,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "3.0.0",
+              "ordinal": 0
+            },
+            "role": "tank"
+          },
+          {
+            "dungeon": "Ruby Life Pools",
+            "short_name": "RLP",
+            "mythic_level": 12,
+            "completed_at": "2026-08-20T21:17:19.000Z",
+            "clear_time_ms": 1361589,
+            "keystone_run_id": 792836,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 399,
+            "zone_id": 14063,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
+            "score": 372.1,
+            "affixes": [
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              },
+              {
+                "id": 9,
+                "name": "Tyrannical",
+                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
+                "icon": "achievement_boss_archaedas",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
+                "wowhead_url": "https://wowhead.com/affix=9"
+              },
+              {
+                "id": 147,
+                "name": "Xal'atath's Guile",
+                "description": "Xal'atath betrays players, revoking her bargains while making deaths subtract 15 seconds from time remaining.",
+                "icon": "ability_racial_chillofnight",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_racial_chillofnight.jpg",
+                "wowhead_url": "https://wowhead.com/affix=147"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/792836-12-ruby-life-pools",
             "spec": {
               "id": 250,
               "name": "Blood",
@@ -3229,60 +3283,6 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/333390-11-altar-of-fangs",
-            "spec": {
-              "id": 250,
-              "name": "Blood",
-              "slug": "blood",
-              "class_id": 6,
-              "role": "tank",
-              "is_melee": true,
-              "patch": "3.0.0",
-              "ordinal": 0
-            },
-            "role": "tank"
-          },
-          {
-            "dungeon": "Ruby Life Pools",
-            "short_name": "RLP",
-            "mythic_level": 11,
-            "completed_at": "2026-08-19T14:07:31.000Z",
-            "clear_time_ms": 1696399,
-            "keystone_run_id": 300573,
-            "par_time_ms": 1680999,
-            "num_keystone_upgrades": 0,
-            "map_challenge_mode_id": 399,
-            "zone_id": 14063,
-            "zone_expansion_id": 9,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
-            "score": 304.7,
-            "affixes": [
-              {
-                "id": 162,
-                "name": "Xal'atath's Bargain: Pulsar",
-                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
-                "icon": "inv_cosmicvoid_nova",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
-                "wowhead_url": "https://wowhead.com/affix=162"
-              },
-              {
-                "id": 10,
-                "name": "Fortified",
-                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
-                "icon": "ability_toughness",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
-                "wowhead_url": "https://wowhead.com/affix=10"
-              },
-              {
-                "id": 9,
-                "name": "Tyrannical",
-                "description": "Bosses have 25% more health. Bosses and their minions inflict up to 15% increased damage.",
-                "icon": "achievement_boss_archaedas",
-                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_boss_archaedas.jpg",
-                "wowhead_url": "https://wowhead.com/affix=9"
-              }
-            ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/300573-11-ruby-life-pools",
             "spec": {
               "id": 250,
               "name": "Blood",
