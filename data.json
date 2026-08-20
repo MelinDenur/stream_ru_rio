@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T05:57:47.084391Z",
+  "updated_at": "2026-08-20T06:59:20.618182Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1144,7 +1144,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/51/196865843-avatar.jpg?alt=/wow/static/images/2d/avatar/35-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-20T01:56:58.000Z",
+        "last_crawled_at": "2026-08-20T06:07:06.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Пельменева",
         "profile_banner": "hordebanner1",
         "mythic_plus_scores_by_season": [
