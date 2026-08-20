@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T09:39:35.668374Z",
+  "updated_at": "2026-08-20T10:35:23.468687Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -20,7 +20,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/227/165735395-avatar.jpg?alt=/wow/static/images/2d/avatar/31-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-20T05:34:05.000Z",
+        "last_crawled_at": "2026-08-20T10:11:18.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Кхня",
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
@@ -3129,30 +3129,30 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "horde",
-        "achievement_points": 16125,
+        "achievement_points": 16135,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/199/163149255-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-19T00:35:54.000Z",
+        "last_crawled_at": "2026-08-20T10:16:44.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Взбучкаю",
         "profile_banner": "hordebanner13",
         "mythic_plus_scores_by_season": [
           {
             "season": "season-mn-2",
             "scores": {
-              "all": 0,
+              "all": 458.8,
               "dps": 0,
               "healer": 0,
-              "tank": 0,
+              "tank": 458.8,
               "spec_0": 0,
               "spec_1": 0,
-              "spec_2": 0,
+              "spec_2": 458.8,
               "spec_3": 0
             },
             "segments": {
               "all": {
-                "score": 0,
-                "color": "#ffffff"
+                "score": 458.8,
+                "color": "#a3ff88"
               },
               "dps": {
                 "score": 0,
@@ -3163,8 +3163,8 @@
                 "color": "#ffffff"
               },
               "tank": {
-                "score": 0,
-                "color": "#ffffff"
+                "score": 458.8,
+                "color": "#a3ff88"
               },
               "spec_0": {
                 "score": 0,
@@ -3175,8 +3175,8 @@
                 "color": "#ffffff"
               },
               "spec_2": {
-                "score": 0,
-                "color": "#ffffff"
+                "score": 458.8,
+                "color": "#a3ff88"
               },
               "spec_3": {
                 "score": 0,
@@ -3185,8 +3185,160 @@
             }
           }
         ],
-        "mythic_plus_best_runs": [],
-        "mythic_plus_highest_level_runs": []
+        "mythic_plus_best_runs": [
+          {
+            "dungeon": "Ruby Life Pools",
+            "short_name": "RLP",
+            "mythic_level": 8,
+            "completed_at": "2026-08-20T08:08:55.000Z",
+            "clear_time_ms": 1061057,
+            "keystone_run_id": 602006,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 2,
+            "map_challenge_mode_id": 399,
+            "zone_id": 14063,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
+            "score": 288.8,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/602006-8-ruby-life-pools",
+            "spec": {
+              "id": 104,
+              "name": "Guardian",
+              "slug": "guardian",
+              "class_id": 11,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "tank"
+          },
+          {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 2,
+            "completed_at": "2026-08-20T07:23:47.000Z",
+            "clear_time_ms": 814691,
+            "keystone_run_id": 601161,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 3,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 170,
+            "affixes": [],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/601161-2-voidscar-arena",
+            "spec": {
+              "id": 104,
+              "name": "Guardian",
+              "slug": "guardian",
+              "class_id": 11,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "tank"
+          }
+        ],
+        "mythic_plus_highest_level_runs": [
+          {
+            "dungeon": "Ruby Life Pools",
+            "short_name": "RLP",
+            "mythic_level": 8,
+            "completed_at": "2026-08-20T08:08:55.000Z",
+            "clear_time_ms": 1061057,
+            "keystone_run_id": 602006,
+            "par_time_ms": 1680999,
+            "num_keystone_upgrades": 2,
+            "map_challenge_mode_id": 399,
+            "zone_id": 14063,
+            "zone_expansion_id": 9,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
+            "score": 288.8,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/602006-8-ruby-life-pools",
+            "spec": {
+              "id": 104,
+              "name": "Guardian",
+              "slug": "guardian",
+              "class_id": 11,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "tank"
+          },
+          {
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
+            "mythic_level": 2,
+            "completed_at": "2026-08-20T07:23:47.000Z",
+            "clear_time_ms": 814691,
+            "keystone_run_id": 601161,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 3,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 170,
+            "affixes": [],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/601161-2-voidscar-arena",
+            "spec": {
+              "id": 104,
+              "name": "Guardian",
+              "slug": "guardian",
+              "class_id": 11,
+              "role": "tank",
+              "is_melee": true,
+              "patch": "1.0.0",
+              "ordinal": 2
+            },
+            "role": "tank"
+          }
+        ]
       }
     },
     {
@@ -3208,7 +3360,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/151/193857943-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-20T08:05:57.000Z",
+        "last_crawled_at": "2026-08-20T10:04:05.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Темканайк",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
@@ -4185,9 +4337,9 @@
             "dungeon": "Kings' Rest",
             "short_name": "KR",
             "mythic_level": 10,
-            "completed_at": "2026-08-19T06:55:45.000Z",
-            "clear_time_ms": 1401950,
-            "keystone_run_id": 198043,
+            "completed_at": "2026-08-20T07:31:11.000Z",
+            "clear_time_ms": 1380057,
+            "keystone_run_id": 595595,
             "par_time_ms": 1980999,
             "num_keystone_upgrades": 2,
             "map_challenge_mode_id": 249,
@@ -4195,7 +4347,7 @@
             "zone_expansion_id": 7,
             "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_kingsrest.jpg",
             "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion7/base/kings-rest.jpg",
-            "score": 331,
+            "score": 331.4,
             "affixes": [
               {
                 "id": 162,
@@ -4222,7 +4374,7 @@
                 "wowhead_url": "https://wowhead.com/affix=9"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/198043-10-kings-rest",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/595595-10-kings-rest",
             "spec": {
               "id": 269,
               "name": "Windwalker",
@@ -5306,7 +5458,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/draenor/64/124938560-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
         "region": "eu",
         "realm": "Draenor",
-        "last_crawled_at": "2026-08-20T04:37:12.000Z",
+        "last_crawled_at": "2026-08-20T10:24:46.000Z",
         "profile_url": "https://raider.io/characters/eu/draenor/Nevodkan",
         "profile_banner": "hordebanner2",
         "mythic_plus_scores_by_season": [
@@ -5919,6 +6071,52 @@
               }
             ],
             "url": "https://raider.io/mythic-plus-runs/season-mn-2/515586-9-altar-of-fangs",
+            "spec": {
+              "id": 577,
+              "name": "Havoc",
+              "slug": "havoc",
+              "class_id": 12,
+              "role": "dps",
+              "is_melee": true,
+              "patch": "7.0.0",
+              "ordinal": 0
+            },
+            "role": "dps"
+          },
+          {
+            "dungeon": "Altar of Fangs",
+            "short_name": "AOF",
+            "mythic_level": 8,
+            "completed_at": "2026-08-20T01:16:59.000Z",
+            "clear_time_ms": 1478868,
+            "keystone_run_id": 603171,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 1,
+            "map_challenge_mode_id": 588,
+            "zone_id": 16865,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_altaroffangs.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/altar-of-fangs.jpg",
+            "score": 281.7,
+            "affixes": [
+              {
+                "id": 162,
+                "name": "Xal'atath's Bargain: Pulsar",
+                "description": "While in combat, Xal'atath summons pulsars that orbit players.",
+                "icon": "inv_cosmicvoid_nova",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_cosmicvoid_nova.jpg",
+                "wowhead_url": "https://wowhead.com/affix=162"
+              },
+              {
+                "id": 10,
+                "name": "Fortified",
+                "description": "Non-boss enemies have 20% more health and inflict up to 20% increased damage.",
+                "icon": "ability_toughness",
+                "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/ability_toughness.jpg",
+                "wowhead_url": "https://wowhead.com/affix=10"
+              }
+            ],
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/603171-8-altar-of-fangs",
             "spec": {
               "id": 577,
               "name": "Havoc",
