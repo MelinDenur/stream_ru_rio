@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T10:58:30.409751Z",
+  "updated_at": "2026-08-21T11:35:00.016802Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -1163,7 +1163,7 @@
             "segments": {
               "all": {
                 "score": 2745.9,
-                "color": "#c945be"
+                "color": "#c442c6"
               },
               "dps": {
                 "score": 0,
@@ -1171,7 +1171,7 @@
               },
               "healer": {
                 "score": 2745.9,
-                "color": "#c945be"
+                "color": "#c442c6"
               },
               "tank": {
                 "score": 0,
@@ -1187,7 +1187,7 @@
               },
               "spec_2": {
                 "score": 2745.9,
-                "color": "#c945be"
+                "color": "#c442c6"
               },
               "spec_3": {
                 "score": 0,
@@ -2268,7 +2268,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/silvermoon/189/219475901-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
         "region": "eu",
         "realm": "Silvermoon",
-        "last_crawled_at": "2026-08-21T10:57:35.000Z",
+        "last_crawled_at": "2026-08-21T11:21:45.000Z",
         "profile_url": "https://raider.io/characters/eu/silvermoon/Shotta",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
@@ -4220,11 +4220,11 @@
             "segments": {
               "all": {
                 "score": 2728.9,
-                "color": "#c543c5"
+                "color": "#bf40cd"
               },
               "dps": {
                 "score": 2728.9,
-                "color": "#c543c5"
+                "color": "#bf40cd"
               },
               "healer": {
                 "score": 0,
@@ -4244,7 +4244,7 @@
               },
               "spec_2": {
                 "score": 2728.9,
-                "color": "#c543c5"
+                "color": "#bf40cd"
               },
               "spec_3": {
                 "score": 0,
@@ -7538,7 +7538,7 @@
             "segments": {
               "all": {
                 "score": 2519.8,
-                "color": "#9a3fec"
+                "color": "#9643ec"
               },
               "dps": {
                 "score": 0,
@@ -7546,7 +7546,7 @@
               },
               "healer": {
                 "score": 2519.8,
-                "color": "#9a3fec"
+                "color": "#9643ec"
               },
               "tank": {
                 "score": 0,
@@ -7554,7 +7554,7 @@
               },
               "spec_0": {
                 "score": 2519.8,
-                "color": "#9a3fec"
+                "color": "#9643ec"
               },
               "spec_1": {
                 "score": 0,
