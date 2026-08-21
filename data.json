@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T19:51:35.315286Z",
+  "updated_at": "2026-08-21T20:30:49.876157Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -2118,20 +2118,20 @@
             "role": "healer"
           },
           {
-            "dungeon": "Ruby Life Pools",
-            "short_name": "RLP",
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
             "mythic_level": 11,
-            "completed_at": "2026-08-19T18:08:14.000Z",
-            "clear_time_ms": 1488684,
-            "keystone_run_id": 457011,
-            "par_time_ms": 1680999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 399,
-            "zone_id": 14063,
-            "zone_expansion_id": 9,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_lifepools.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion9/base/ruby-life-pools.jpg",
-            "score": 339.3,
+            "completed_at": "2026-08-21T17:12:57.000Z",
+            "clear_time_ms": 1388170,
+            "keystone_run_id": 1473736,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 2,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 343.6,
             "affixes": [
               {
                 "id": 162,
@@ -2158,7 +2158,7 @@
                 "wowhead_url": "https://wowhead.com/affix=9"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/457011-11-ruby-life-pools",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/1473736-11-voidscar-arena",
             "spec": {
               "id": 264,
               "name": "Restoration",
@@ -7617,7 +7617,7 @@
             "segments": {
               "all": {
                 "score": 2546.4,
-                "color": "#9b3eec"
+                "color": "#9a40ec"
               },
               "dps": {
                 "score": 0,
@@ -7625,7 +7625,7 @@
               },
               "healer": {
                 "score": 2546.4,
-                "color": "#9b3eec"
+                "color": "#9a40ec"
               },
               "tank": {
                 "score": 0,
@@ -7633,7 +7633,7 @@
               },
               "spec_0": {
                 "score": 2546.4,
-                "color": "#9b3eec"
+                "color": "#9a40ec"
               },
               "spec_1": {
                 "score": 0,
@@ -8548,20 +8548,20 @@
             "role": "healer"
           },
           {
-            "dungeon": "Temple of Sethraliss",
-            "short_name": "TOS",
+            "dungeon": "Voidscar Arena",
+            "short_name": "VSA",
             "mythic_level": 10,
-            "completed_at": "2026-08-21T06:16:38.000Z",
-            "clear_time_ms": 1563391,
-            "keystone_run_id": 976444,
-            "par_time_ms": 1920999,
-            "num_keystone_upgrades": 1,
-            "map_challenge_mode_id": 250,
-            "zone_id": 9527,
-            "zone_expansion_id": 7,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_templeofsethraliss.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion7/base/temple-of-sethraliss.jpg",
-            "score": 327,
+            "completed_at": "2026-08-21T19:30:23.000Z",
+            "clear_time_ms": 1350927,
+            "keystone_run_id": 1474692,
+            "par_time_ms": 1800999,
+            "num_keystone_upgrades": 2,
+            "map_challenge_mode_id": 585,
+            "zone_id": 16425,
+            "zone_expansion_id": 11,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_voidscararena.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/voidscar-arena.jpg",
+            "score": 329.4,
             "affixes": [
               {
                 "id": 162,
@@ -8588,7 +8588,7 @@
                 "wowhead_url": "https://wowhead.com/affix=9"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/976444-10-temple-of-sethraliss",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/1474692-10-voidscar-arena",
             "spec": {
               "id": 65,
               "name": "Holy",
