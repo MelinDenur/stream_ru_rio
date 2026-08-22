@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T07:35:36.797378Z",
+  "updated_at": "2026-08-22T08:35:49.363364Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -20,7 +20,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/227/165735395-avatar.jpg?alt=/wow/static/images/2d/avatar/31-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-22T05:34:53.000Z",
+        "last_crawled_at": "2026-08-22T08:25:45.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Кхня",
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
@@ -3336,7 +3336,7 @@
             "segments": {
               "all": {
                 "score": 2259.8,
-                "color": "#356cdf"
+                "color": "#256ede"
               },
               "dps": {
                 "score": 0,
@@ -3348,7 +3348,7 @@
               },
               "tank": {
                 "score": 2259.8,
-                "color": "#356cdf"
+                "color": "#256ede"
               },
               "spec_0": {
                 "score": 0,
@@ -3360,7 +3360,7 @@
               },
               "spec_2": {
                 "score": 2259.8,
-                "color": "#356cdf"
+                "color": "#256ede"
               },
               "spec_3": {
                 "score": 0,
@@ -6397,11 +6397,11 @@
             "segments": {
               "all": {
                 "score": 2358.3,
-                "color": "#5f62e3"
+                "color": "#5964e2"
               },
               "dps": {
                 "score": 2358.3,
-                "color": "#5f62e3"
+                "color": "#5964e2"
               },
               "healer": {
                 "score": 0,
@@ -6413,7 +6413,7 @@
               },
               "spec_0": {
                 "score": 2358.3,
-                "color": "#5f62e3"
+                "color": "#5964e2"
               },
               "spec_1": {
                 "score": 0,
@@ -7617,7 +7617,7 @@
             "segments": {
               "all": {
                 "score": 2546.4,
-                "color": "#9346eb"
+                "color": "#9247eb"
               },
               "dps": {
                 "score": 0,
@@ -7625,7 +7625,7 @@
               },
               "healer": {
                 "score": 2546.4,
-                "color": "#9346eb"
+                "color": "#9247eb"
               },
               "tank": {
                 "score": 0,
@@ -7633,7 +7633,7 @@
               },
               "spec_0": {
                 "score": 2546.4,
-                "color": "#9346eb"
+                "color": "#9247eb"
               },
               "spec_1": {
                 "score": 0,
