@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T23:51:59.993326Z",
+  "updated_at": "2026-08-22T01:31:38.716073Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -7298,20 +7298,20 @@
             "role": "dps"
           },
           {
-            "dungeon": "Murder Row",
-            "short_name": "MR",
+            "dungeon": "Temple of Sethraliss",
+            "short_name": "TOS",
             "mythic_level": 10,
-            "completed_at": "2026-08-20T21:54:52.000Z",
-            "clear_time_ms": 1443696,
-            "keystone_run_id": 838072,
-            "par_time_ms": 2040999,
+            "completed_at": "2026-08-22T01:25:39.000Z",
+            "clear_time_ms": 1337655,
+            "keystone_run_id": 1649231,
+            "par_time_ms": 1920999,
             "num_keystone_upgrades": 2,
-            "map_challenge_mode_id": 587,
-            "zone_id": 16091,
-            "zone_expansion_id": 11,
-            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/inv_achievement_dungeon_murderrow.jpg",
-            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion11/base/murder-row.jpg",
-            "score": 331,
+            "map_challenge_mode_id": 250,
+            "zone_id": 9527,
+            "zone_expansion_id": 7,
+            "icon_url": "https://cdn.raiderio.net/images/wow/icons/large/achievement_dungeon_templeofsethraliss.jpg",
+            "background_image_url": "https://cdn.raiderio.net/images/dungeons/expansion7/base/temple-of-sethraliss.jpg",
+            "score": 331.4,
             "affixes": [
               {
                 "id": 162,
@@ -7338,7 +7338,7 @@
                 "wowhead_url": "https://wowhead.com/affix=9"
               }
             ],
-            "url": "https://raider.io/mythic-plus-runs/season-mn-2/838072-10-murder-row",
+            "url": "https://raider.io/mythic-plus-runs/season-mn-2/1649231-10-temple-of-sethraliss",
             "spec": {
               "id": 577,
               "name": "Havoc",
