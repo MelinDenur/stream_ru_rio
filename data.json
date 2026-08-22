@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T05:32:07.323607Z",
+  "updated_at": "2026-08-22T06:48:15.572615Z",
   "streamers": [
     {
       "twitch": "Khnja",
@@ -16,11 +16,11 @@
         "active_spec_role": "TANK",
         "gender": "male",
         "faction": "horde",
-        "achievement_points": 26255,
+        "achievement_points": 26265,
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/howling-fjord/227/165735395-avatar.jpg?alt=/wow/static/images/2d/avatar/31-0.jpg",
         "region": "eu",
         "realm": "Howling Fjord",
-        "last_crawled_at": "2026-08-21T18:29:41.000Z",
+        "last_crawled_at": "2026-08-22T05:34:53.000Z",
         "profile_url": "https://raider.io/characters/eu/howling-fjord/Кхня",
         "profile_banner": "hordebanner6",
         "mythic_plus_scores_by_season": [
@@ -3336,7 +3336,7 @@
             "segments": {
               "all": {
                 "score": 2259.8,
-                "color": "#406ae0"
+                "color": "#356cdf"
               },
               "dps": {
                 "score": 0,
@@ -3348,7 +3348,7 @@
               },
               "tank": {
                 "score": 2259.8,
-                "color": "#406ae0"
+                "color": "#356cdf"
               },
               "spec_0": {
                 "score": 0,
@@ -3360,7 +3360,7 @@
               },
               "spec_2": {
                 "score": 2259.8,
-                "color": "#406ae0"
+                "color": "#356cdf"
               },
               "spec_3": {
                 "score": 0,
@@ -6397,11 +6397,11 @@
             "segments": {
               "all": {
                 "score": 2358.3,
-                "color": "#6360e4"
+                "color": "#5f62e3"
               },
               "dps": {
                 "score": 2358.3,
-                "color": "#6360e4"
+                "color": "#5f62e3"
               },
               "healer": {
                 "score": 0,
@@ -6413,7 +6413,7 @@
               },
               "spec_0": {
                 "score": 2358.3,
-                "color": "#6360e4"
+                "color": "#5f62e3"
               },
               "spec_1": {
                 "score": 0,
@@ -7373,7 +7373,7 @@
         "thumbnail_url": "https://render.worldofwarcraft.com/eu/character/tarren-mill/130/190748802-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
         "region": "eu",
         "realm": "Tarren Mill",
-        "last_crawled_at": "2026-08-19T00:06:59.000Z",
+        "last_crawled_at": "2026-08-22T05:47:50.000Z",
         "profile_url": "https://raider.io/characters/eu/tarren-mill/Nórthúr",
         "profile_banner": "alliancebanner1",
         "mythic_plus_scores_by_season": [
@@ -7617,7 +7617,7 @@
             "segments": {
               "all": {
                 "score": 2546.4,
-                "color": "#9445eb"
+                "color": "#9346eb"
               },
               "dps": {
                 "score": 0,
@@ -7625,7 +7625,7 @@
               },
               "healer": {
                 "score": 2546.4,
-                "color": "#9445eb"
+                "color": "#9346eb"
               },
               "tank": {
                 "score": 0,
@@ -7633,7 +7633,7 @@
               },
               "spec_0": {
                 "score": 2546.4,
-                "color": "#9445eb"
+                "color": "#9346eb"
               },
               "spec_1": {
                 "score": 0,
